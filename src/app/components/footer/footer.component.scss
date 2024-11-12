@@ -1,0 +1,196 @@
+.main-footer {
+    background: url('/assets/img/footer/footer-bg.png') no-repeat var(--primary-color); /* Background color */
+    background-position: center center;
+    background-size: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; /* General font size */
+    padding: 100px 0 0; /* Footer padding */
+    
+    .container {
+      padding: 0 15px;
+    }
+
+    .footer-links h3 {
+        color: var(--white-color);
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    div {
+        display: block;
+        unicode-bidi: isolate;
+    }
+  
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1* var(--bs-gutter-y));
+        margin-right: calc(-.5* var(--bs-gutter-x));
+        margin-left: calc(-.5* var(--bs-gutter-x));
+    }
+
+
+    /* About Footer Section */
+    .about-footer {
+      color: var(--white-color);
+      font-family: 'Poppins', sans-serif;
+  
+      .footer-logo {
+        padding: 0 3px 35px; /* Spacing below the logo */
+        
+        img {
+          width: 220px; /* Image width for logo */
+          height: auto; /* Adjust height automatically */
+        }
+      }
+  
+      .about-footer-content {
+        p {
+          color: var(--white-color); /* White text color for paragraph */
+          max-width: 403px; /* Set a max width */
+          font-family: 'Poppins', sans-serif;
+        }
+      }
+    }
+  
+    /* Quick Links Section */
+    .footer-quick-links {
+      h3 {
+        font-size: 20px; /* Font size for quick link title */
+        color: var(--white-color);
+      }
+  
+      ul {
+        padding-left: 0rem;
+        font-size: 16px; /* Font size for list items */
+        color: var(--white-color); /* Color for the links */
+        
+        li {
+          margin-bottom: 10px; /* Space between items */
+        }
+  
+        a {
+          color: var(--white-color);
+          text-decoration: none;
+          transition: color 0.3s;
+          
+          &:hover {
+            color: var(--accent-color); /* Hover color for quick links */
+          }
+        }
+      }
+    }
+  
+    /* Social Links Section */
+    .footer-social-links {
+      h3 {
+        font-size: 20px;
+        color: var(--white-color);
+      }
+  
+      ul {
+        padding-left: 0rem;
+        font-size: 16px;
+        color: var(--white-color);
+        
+        li {
+          margin-bottom: 10px;
+        }
+  
+        a {
+          color: var(--white-color);
+          text-decoration: none;
+          transition: color 0.3s;
+          
+          &:hover {
+            color: var(--accent-color); /* Hover color for social links */
+          }
+        }
+      }
+    }
+  
+    /* Contact Section */
+    .footer-contact-links {
+      h3 {
+        font-size: 20px;
+        color: var(--white-color);
+      }
+  
+      ul {
+        padding-left: 0rem;
+        font-size: 16px;
+        color: var(--white-color);
+  
+        li {
+          margin-bottom: 10px;
+        }
+  
+        a {
+          color: var(--white-color);
+          text-decoration: none;
+          transition: color 0.3s;
+          
+          &:hover {
+            color: var(--accent-color); /* Hover color for contact links */
+          }
+        }
+      }
+    }
+  
+    /* Copyright Section */
+    .footer-copyright {
+      text-align: center;
+      padding: 20px 0;
+      color: var(--white-color);
+  
+      p {
+        margin: 0;
+        line-height: 1.8rem;
+      }
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .main-footer {
+      font-size: 14px; /* Smaller font for smaller devices */
+    }
+  
+    .footer-logo img {
+      width: 180px; /* Smaller logo for smaller screens */
+    }
+  
+    .footer-quick-links ul,
+    .footer-social-links ul,
+    .footer-contact-links ul {
+      font-size: 14px; /* Smaller font for links on smaller devices */
+    }
+  }
+
+  @media (min-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .col-lg-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+  }
+  

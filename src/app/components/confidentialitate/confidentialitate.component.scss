@@ -1,0 +1,42 @@
+#main {
+    #banner-1478717902 {
+      padding-top: 200px;
+      background-color: rgb(255, 255, 255);
+  
+      .ux-shape-divider--top svg {
+        height: 150px;
+        --divider-top-width: 100%;
+      }
+  
+      .ux-shape-divider--bottom svg {
+        height: 150px;
+        --divider-width: 100%;
+      }
+    }
+  
+    #text-box-321432833 {
+      width: 100%;
+  
+      .text-box-content {
+        font-size: 100%;
+  
+        .text-inner {
+          text-align: center; /* Center the title */
+        }
+      }
+    }
+  
+    #gap-799981853 {
+      padding-top: 30px;
+    }
+  
+    .row {
+      margin-left: 300px;
+      margin-right: 300px;
+    }
+  
+    .col-inner {
+      padding-left: 50px; /* Adjust the left padding as needed */
+    }
+  }
+  

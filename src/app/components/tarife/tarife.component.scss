@@ -1,0 +1,84 @@
+.sample-wrapper {
+    overflow-y: auto;
+    max-height: fit-content;
+    margin: 8px;
+    text-align: center; // Center-align the content
+}
+
+h2 {
+    margin-bottom: 16px; // Add margin to the bottom of h2 for spacing
+    text-align: center;
+}
+
+igx-switch {
+    padding: 16px;
+}
+
+igx-accordion {
+    // width: 40%; // Set the width for the accordion
+    max-width: 50%; // Set a maximum width if needed
+    margin: 0 auto; // Center the accordion
+}
+
+igx-expansion-panel {
+    border: 3px solid rgba(174, 174, 174, 0.25);;
+    margin-bottom: 8px; // Add margin to the bottom of each expansion panel for spacing
+    transition: background-color 0.3s; // Smooth transition for background color change
+
+    &:hover {
+        background: linear-gradient(to right, #72acf8 0%, #245ec9 25%, #1743a2 51%, #72acf8 100%); // Background color on hover
+    }
+
+}
+
+::ng-deep .igx-expansion-panel__header-inner {
+    cursor: pointer; // Add cursor pointer on header for better indication
+    transition: background-color 0.3s; // Smooth transition for background color change
+
+    &:hover {
+        background: linear-gradient(to right, #72acf8 0%, #245ec9 25%, #1743a2 51%, #72acf8 100%); // Background color on hover
+        color: #ffffff; // Text color for the panel header when hovered !
+    }
+
+    &[aria-expanded='true'] {
+        background: linear-gradient(to right, #72acf8 0%, #245ec9 25%, #1743a2 51%, #72acf8 100%); // Background color for the active (expanded) panel
+        color: #ffffff; // Text color for the panel header when expanded
+    }
+
+    igx-expansion-panel-title {
+        // Styles for the title, you can customize as needed
+        color: #000; // Default text color for the panel header title
+    }
+}
+
+::ng-deep .igx-expansion-panel__header-inner[aria-expanded='true'] igx-expansion-panel-title {
+    color: #ffffff; // Text color for the panel header title when expanded
+}
+
+::ng-deep .igx-expansion-panel__header-inner:hover igx-expansion-panel-title {
+    color: rgb(255, 255, 255); // Text color on hover for the title
+}
+
+::ng-deep .igx-expansion-panel__header-inner[aria-expanded='true'] igx-expansion-panel-title {
+    color: white; // Text color for the panel title when expanded
+}
+
+::ng-deep .igx-expansion-panel__body {
+    font-size: 18px !important; /* Adjust the font size as needed */
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.table-line-layout {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px; /* Add margin between each two-column layout, adjust as needed */
+}
+
+.column-left {
+    flex: 0 0 75%; /* 75% width, no grow or shrink */
+}
+
+.column-right {
+    flex: 0 0 25%; /* 25% width, no grow or shrink */
+}
