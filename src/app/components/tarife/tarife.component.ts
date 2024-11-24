@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ChangeDetectorRef } from '@angular/core';
 import { IgxAccordionModule, IgxSwitchModule } from 'igniteui-angular';
-import { BrowserModule } from "@angular/platform-browser";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @Component({
   selector: 'app-tarife',
@@ -12,5 +11,43 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
   styleUrl: './tarife.component.scss'
 })
 export class TarifeComponent {
-  public singleBranchExpand = false;
+  singleBranchExpand = false;
+  expandAll = false;
+
+  /**
+   * Handles the logic for toggling Expand All / Collapse All.
+   * Automatically disables Single Branch Expand if active.
+   */
+  toggleExpandAll(accordion: any): void {
+    this.expandAll = !this.expandAll;
+
+    if (this.expandAll) {
+      // Disable singleBranchExpand when Expand All is activated
+      this.singleBranchExpand = false;
+      accordion.panels.forEach((panel: any) => panel.open());
+    } else {
+      accordion.panels.forEach((panel: any) => panel.close());
+    }
+  }
+
+  /**
+   * Handles the logic for toggling Single Branch Expand.
+   * Automatically disables Expand All if active.
+   */
+  toggleSingleBranchExpand(accordion: any): void {
+    if (!this.singleBranchExpand) {
+      // If enabling Single Branch Expand, turn off Expand All and close all panels
+      this.expandAll = false;
+      accordion.panels.forEach((panel: any) => panel.close());
+    }
+  }
+
+  /**
+   * Logic to ensure proper toggling behavior when Single Branch Expand is disabled.
+   */
+  resetSingleBranchExpand(): void {
+    if (this.singleBranchExpand) {
+      this.singleBranchExpand = false;
+    }
+  }
 }

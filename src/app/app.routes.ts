@@ -7,6 +7,11 @@ export const routes: Routes = [
             import('./components/home/home.component').then((m) => m.HomeComponent)
     },
     {
+        path: 'despre-noi',
+        loadComponent: () =>
+            import('./components/despre-noi/despre-noi.component').then((m) => m.DespreNoiComponent)
+    },
+    {
         path: 'tarife',
         loadComponent: () =>
             import('./components/tarife/tarife.component').then((m) => m.TarifeComponent)
@@ -25,5 +30,15 @@ export const routes: Routes = [
         path: 'confidentialitate',
         loadComponent: () =>
             import('./components/confidentialitate/confidentialitate.component').then((m) => m.ConfidentialitateComponent)
+    },
+    {
+        path: 'intrebari-frecvente',
+        loadComponent: () =>
+            import('./components/intrebari-frecvente/intrebari-frecvente.component').then((m) => m.IntrebariFrecventeComponent)
+    },
+    {
+        path: 'not-found',
+        loadComponent: () =>
+            import('./components/not-found/not-found.component').then((m) => m.NotFoundComponent)
     }
 ];

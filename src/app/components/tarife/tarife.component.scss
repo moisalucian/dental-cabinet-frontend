@@ -1,84 +1,263 @@
+/* Page Header Styles */
+.page-header {
+    background: var(--secondary-color) url('/assets/img/backgrounds/page-header-bg.png') no-repeat;
+    background-position: center center;
+    background-size: auto;
+    padding: 100px 0;
+}
+
+.page-header-box h1 {
+    font-size: 54px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.page-header-box h1 span {
+    color: var(--primary-color);
+}
+
+.page-header-box ol {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.page-header-box ol li.breadcrumb-item {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.page-header-box ol li.breadcrumb-item a {
+    color: inherit;
+}
+
+.page-header-box ol .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--accent-color);
+}
+
+/* Sample Wrapper */
 .sample-wrapper {
     overflow-y: auto;
     max-height: fit-content;
     margin: 8px;
-    text-align: center; // Center-align the content
-}
-
-h2 {
-    margin-bottom: 16px; // Add margin to the bottom of h2 for spacing
     text-align: center;
 }
 
+/* h2 Style */
+h2 {
+    margin-bottom: 16px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* igx-switch Styling */
 igx-switch {
     padding: 16px;
 }
 
+/* igx-accordion Styling */
 igx-accordion {
-    // width: 40%; // Set the width for the accordion
-    max-width: 50%; // Set a maximum width if needed
-    margin: 0 auto; // Center the accordion
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top:30px;
+    margin-bottom: 50px;
 }
 
+/* igx-expansion-panel Styles */
 igx-expansion-panel {
-    border: 3px solid rgba(174, 174, 174, 0.25);;
-    margin-bottom: 8px; // Add margin to the bottom of each expansion panel for spacing
-    transition: background-color 0.3s; // Smooth transition for background color change
-
-    &:hover {
-        background: linear-gradient(to right, #72acf8 0%, #245ec9 25%, #1743a2 51%, #72acf8 100%); // Background color on hover
-    }
-
+    border: 3px solid var(--divider-color);
+    margin-bottom: 8px;
+    transition: background-color 0.3s;
 }
+
+
+::ng-deep .igx-expansion-panel[aria-expanded="true"] .igx-expansion-panel__header-title {
+    color: var(--white-color);
+}
+
 
 ::ng-deep .igx-expansion-panel__header-inner {
-    cursor: pointer; // Add cursor pointer on header for better indication
-    transition: background-color 0.3s; // Smooth transition for background color change
-
-    &:hover {
-        background: linear-gradient(to right, #72acf8 0%, #245ec9 25%, #1743a2 51%, #72acf8 100%); // Background color on hover
-        color: #ffffff; // Text color for the panel header when hovered !
-    }
-
-    &[aria-expanded='true'] {
-        background: linear-gradient(to right, #72acf8 0%, #245ec9 25%, #1743a2 51%, #72acf8 100%); // Background color for the active (expanded) panel
-        color: #ffffff; // Text color for the panel header when expanded
-    }
-
-    igx-expansion-panel-title {
-        // Styles for the title, you can customize as needed
-        color: #000; // Default text color for the panel header title
-    }
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-::ng-deep .igx-expansion-panel__header-inner[aria-expanded='true'] igx-expansion-panel-title {
-    color: #ffffff; // Text color for the panel header title when expanded
+::ng-deep .igx-expansion-panel__header-inner:hover {
+    background: linear-gradient(to right, var(--accent-color) 0%, var(--accent-color) 25%, var(--primary-color) 51%, var(--accent-color) 100%);
+    color: var(--white-color);
+}
+
+::ng-deep .igx-expansion-panel__header-inner[aria-expanded='true'] {
+    background: linear-gradient(to right, var(--accent-color) 0%, var(--accent-color) 25%, var(--primary-color) 51%, var(--accent-color) 100%);
+    color: var(--white-color);
+    font-weight: bold;
 }
 
 ::ng-deep .igx-expansion-panel__header-inner:hover igx-expansion-panel-title {
-    color: rgb(255, 255, 255); // Text color on hover for the title
-}
-
-::ng-deep .igx-expansion-panel__header-inner[aria-expanded='true'] igx-expansion-panel-title {
-    color: white; // Text color for the panel title when expanded
+    color: var(--white-color);
 }
 
 ::ng-deep .igx-expansion-panel__body {
-    font-size: 18px !important; /* Adjust the font size as needed */
+    font-size: 18px !important;
     display: flex !important;
     flex-direction: column !important;
+    color: var(--text-color) !important;
 }
 
+/* Table Layout Styling */
 .table-line-layout {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px; /* Add margin between each two-column layout, adjust as needed */
+    margin-bottom: 15px;
+    color: var(--text-color);
 }
 
 .column-left {
-    flex: 0 0 75%; /* 75% width, no grow or shrink */
+    flex: 0 0 75%;
 }
 
 .column-right {
-    flex: 0 0 25%; /* 25% width, no grow or shrink */
+    flex: 0 0 25%;
+}
+
+/* TOGGLE buttons styling */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+
+    /* Center the container horizontally and vertically */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Center the text inside the container */
+.toggle-container span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* Hide the default checkbox */
+.toggle-container input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+/* Switch itself */
+.toggle-container .slider {
+    position: relative;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 24px;
+    transition: background-color 0.3s ease;
+}
+
+/* Slider thumb */
+.toggle-container .slider:before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    background-color: white;
+    border-radius: 50%;
+    left: 3px;
+    bottom: 3px;
+    transition: transform 0.3s ease;
+}
+
+/* When checkbox is checked */
+.toggle-container input[type="checkbox"]:checked + .slider {
+    background-color: #4caf50;
+}
+
+.toggle-container input[type="checkbox"]:checked + .slider:before {
+    transform: translateX(30px);
+}
+
+/* When the checkbox is checked, change label color */
+.toggle-container input[type="checkbox"]:checked + .slider + span {
+    color: #4caf50;
+}
+
+/* Hover state for the switch */
+.toggle-container .slider:hover {
+    background-color: #bbb;
+}
+
+/* Style for igx-switch component using ::ng-deep */
+::ng-deep igx-switch {
+    --igx-switch-width: 60px;
+    --igx-switch-height: 30px;
+    --igx-switch-thickness: 15px;
+    --igx-switch-thickness-checked: 18px;
+    --igx-switch-background-color: #ddd;
+    --igx-switch-background-color-checked: #4caf50;
+    --igx-switch-thumb-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* On hover, change the switch background */
+::ng-deep igx-switch:hover {
+    --igx-switch-background-color: #bbb;
+}
+
+/* Customize the label next to the switch */
+::ng-deep igx-switch label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4caf50;
+    margin-left: 10px;
+}
+
+/* When the switch is turned on, change the label color */
+::ng-deep igx-switch.checked + span {
+    color: #4caf50;
+}
+
+
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) { 
+    /* Accordion Panel Adjustments for Mobile */
+    .igx-accordion {
+        max-width: 100%; /* Full width for small screens */
+        margin: 0; /* Remove margins to prevent unnecessary spacing */
+        padding: 0 15px; /* Add some padding to prevent content from touching the edges */
+        margin-bottom: 30px;
+    }
+    
+    /* Adjust header font size on mobile for better readability */
+    ::ng-deep .igx-expansion-panel__header-title {
+        font-size: 20px;  /* Smaller font size for mobile devices */
+    }
+
+    /* Make sure the text is more readable on small screens */
+    ::ng-deep .igx-expansion-panel[aria-expanded="true"] .igx-expansion-panel__header-title {
+        font-size: 24px;  /* Slightly larger for expanded state */
+    }
+
+    /* Adjusting the accordion panel height and spacing for mobile */
+    ::ng-deep .igx-expansion-panel__body {
+        font-size: 16px;  /* Slightly smaller text for better mobile readability */
+        padding: 10px;  /* Padding inside the body for comfortable spacing */
+    }
+
+    /* Additional Styling Adjustments (optional) */
+    ::ng-deep .igx-expansion-panel__header-inner {
+        padding: 10px;  /* Padding for the header area */
+    }
 }

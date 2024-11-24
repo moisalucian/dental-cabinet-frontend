@@ -1,0 +1,1020 @@
+/************************************/
+/***       06. About Us css	      ***/
+/************************************/
+
+.about-us {
+    padding: 100px 0;
+  }
+  
+  .about-image {
+    background: url('/assets/img/backgrounds/about-bg-image.png') no-repeat;
+    background-position: center center;
+    background-size: auto;
+    position: relative;
+    margin-right: 50px;
+    padding-bottom: 200px;
+  }
+  
+  .about-img-1 {
+    width: 410px;
+  }
+  
+  .about-img-2 figure,
+  .about-img-1 figure {
+    display: block;
+  }
+  
+  .about-img-1 img {
+    aspect-ratio: 1 /0.96;
+    object-fit: cover;
+    border-radius: 40px;
+  }
+  
+  .about-img-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .about-img-2 img {
+    aspect-ratio: 1 /0.72;
+    object-fit: cover;
+    border: 7px solid var(--white-color);
+    border-radius: 40px;
+  }
+  
+  .about-experience {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 50%);
+  }
+  
+  .about-experience img {
+    animation: rotate 30s infinite linear;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .about-us-body {
+    margin-bottom: 40px;
+  }
+  
+  .about-us-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .about-us-body ul li {
+    position: relative;
+    width: calc(50% - 10px);
+    font-weight: 600;
+    color: var(--primary-color);
+    padding-left: 30px;
+  }
+  
+  .about-us-body ul li:before {
+    content: '\f058';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--accent-color);
+    display: inline-block;
+    line-height: normal;
+    position: absolute;
+    top: 3px;
+    left: 0;
+  }
+
+
+/************************************/
+/***     15. About us Page css	  ***/
+/************************************/
+
+.page-header{
+	background: var(--secondary-color) url('/assets/img/backgrounds/page-header-bg.png') no-repeat;
+	background-position: center center;
+	background-size: auto;
+	padding: 100px 0;
+}
+
+.page-header-box h1{
+	font-size: 54px;
+    font-weight: 700;
+	text-align: center;
+	color: var(--accent-color);
+	margin-bottom: 20px;
+}
+
+.page-header-box h1 span{
+	color: var(--primary-color);
+}
+
+.page-header-box ol{
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+}
+
+.page-header-box ol li.breadcrumb-item{
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--primary-color);
+}
+
+.page-header-box ol li.breadcrumb-item a{
+    color: inherit;
+}
+
+.page-header-box ol .breadcrumb-item+.breadcrumb-item::before{
+    color: var(--accent-color);
+}
+
+.page-about-us .about-us-body{
+    margin-bottom: 0px;
+}
+
+.insurance-company-carousel{
+	background: var(--secondary-color);
+	padding: 60px 0;
+}
+
+.insurance-carousel-title h3{
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.company-carousel .swiper-wrapper .swiper-slide{
+	text-align: center;
+}
+
+.company-carousel .swiper-wrapper .swiper-slide .company-logo img{
+	max-width: 200px;
+}
+
+.about-how-it-work .how-it-work-content{
+	margin: 0 25px 0 0;
+}
+
+.dental-process{
+	padding: 100px 0 70px;
+}
+
+.dental-process .section-title{
+	max-width: 560px;
+	margin: 0 auto;
+}
+
+.dental-process-item{
+	height: calc(100% - 30px);
+	margin-bottom: 30px;
+}
+
+.dental-process-image{
+	position: relative;
+	margin-bottom: 30px;
+	border-radius: 40px;
+	overflow: hidden;
+}
+
+.dental-process-image .dental-process-img img{
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	filter: brightness(80%);
+	border-radius: 40px;
+	transition: all 0.4s ease-in-out;
+}
+
+.dental-process-item:hover .dental-process-img img{
+	transform: scale(1.1);
+}
+
+.dental-process-image .dental-process-number{
+	position: absolute;
+	background: var(--white-color);
+	border-radius: 16px;
+	left: 20px;
+	bottom: 20px;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	transition: all 0.5s ease-in-out;
+}
+
+.dental-process-item:hover .dental-process-image .dental-process-number{
+	background-color: transparent;
+}
+
+.dental-process-image .dental-process-number::before{
+	content: '';
+	display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: var(--primary-color);
+    border-radius: 16px;
+	transform: scale(0);
+    transition: all 0.4s ease-in-out;
+    height: 100%;
+}
+
+.dental-process-item:hover .dental-process-image .dental-process-number::before{
+	transform: scale(1);
+}
+
+.dental-process-image .dental-process-number h3{
+	position: relative;
+	z-index: 1;
+	font-size: 20px;
+	font-weight: 600;
+	transition: all 0.4s ease-in-out;
+}
+
+.dental-process-item:hover .dental-process-number h3{
+	color: var(--white-color);
+}
+
+.dental-process-item .dental-process-content h3{
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.dental-process-item .dental-process-content p{
+	margin: 0;
+}
+
+.expertise-experience-content{
+	margin-right: 30px;
+}
+
+.expertise-experience-body ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.expertise-experience-body ul li{
+    position: relative;
+    width: calc(50% - 10px);
+    font-weight: 600;
+    color: var(--primary-color);
+    padding-left: 30px;
+}
+
+.expertise-experience-body ul li:before{
+    content: '\f058';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--accent-color);
+    display: inline-block;
+    line-height: normal;
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+.expertise-experience-img figure{
+	display: block;
+}
+
+.expertise-experience-img img{
+	width: 100%;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	border-radius: 40px;
+}
+
+/************************************/
+/***     09. How It Work Css	  ***/
+/************************************/
+
+.how-it-work{
+	padding: 100px 0;
+}
+
+.how-it-work-img figure{
+	display: block;
+}
+
+.how-it-work-img img{
+	aspect-ratio: 1 / 1.05;
+	object-fit: cover;
+	border-radius: 40px;
+}
+
+.how-it-work-content{
+	margin-left: 25px;
+}
+
+.faq-accordion.how-work-accordion .accordion-item{
+	position: relative;
+	background: none;
+	border-bottom: 1px solid var(--dark-divider-color);
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+}
+
+.faq-accordion.how-work-accordion .accordion-item:last-child{
+	border: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.faq-accordion.how-work-accordion .accordion-header{
+	position: relative;
+}
+
+.faq-accordion.how-work-accordion .accordion-item .icon-box{
+	position: absolute;
+	left: 0;
+	top: 4px;
+}
+
+.faq-accordion.how-work-accordion .accordion-item .icon-box img{
+	max-width: 40px;
+}
+
+.faq-accordion.how-work-accordion .accordion-item .accordion-button{
+	position: relative;
+	color: var(--primary-color);
+	font-size: 20px;
+	font-weight: 600;
+	border: none;
+	box-shadow: none;
+	padding: 5px 35px 5px 60px;
+}
+
+.faq-accordion.how-work-accordion .accordion-header .accordion-button::after,
+.faq-accordion.how-work-accordion .accordion-header .accordion-button.collapsed::after{
+	content: '\f077';
+	position: absolute;
+	top: 50%;
+	right: 0;
+	font-family: 'Font Awesome 6 Free';
+	font-size: 20px;
+    font-weight: 900;
+	color: var(--primary-color);
+	transform: translate(0px, -50%);
+	transition: all 0.3s ease-in-out;
+}
+
+.faq-accordion.how-work-accordion .accordion-header .accordion-button.collapsed::after{
+	transform: rotate(-180deg) translate(0px, 50%);
+}
+
+.faq-accordion.how-work-accordion .accordion-item .accordion-body{
+	padding: 10px 35px 0px 60px;
+}
+
+.faq-accordion.how-work-accordion .accordion-item .accordion-body p{
+	margin: 0;
+}
+
+
+
+/************************************/
+/***     08. Why Choose Us css	  ***/
+/************************************/
+
+.icon-star-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(50%, 50%);
+}
+
+
+.icon-star-image img{
+	max-width: 112px;
+	animation: zoom 1s linear 1s infinite;
+}
+
+@keyframes zoom{
+	0%{
+	  transform: scale(1);
+	}
+	50%{
+	  transform: scale(0.8);
+	}
+	100%{
+	  transform: scale(1);
+	}
+  }
+  
+.why-choose-us{
+	position: relative;
+	background: var(--secondary-color) url('/assets/img/backgrounds/why-choose-us-bg.png') no-repeat;
+	background-position: top center;
+	background-size: auto;
+	padding: 100px 0;
+}
+
+.why-choose-us .icon-star-image{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(10px, -50%);
+}
+
+.why-choose-box-1{
+	position: relative;
+	z-index: 1;
+}
+
+.why-choose-box-1 .why-choose-item{
+	flex-direction: row-reverse;
+}
+
+.why-choose-box-1 .why-choose-item .icon-box{
+    margin-left: 15px;
+	margin-right: 0;
+}
+
+.why-choose-box-1 .why-choose-item .why-choose-content{
+	text-align: right;
+}
+
+.why-choose-item{
+    display: flex;
+    align-items: center;
+	margin-bottom: 60px;
+}
+
+.why-choose-item:last-child{
+	margin-bottom: 0;
+}
+
+.why-choose-item .icon-box{
+    margin-right: 15px;
+}
+
+.why-choose-item .icon-box img{
+	max-width: 48px;
+}
+
+.why-choose-content{
+    width: calc(100% - 63px);
+}
+
+.why-choose-content h3{
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.why-choose-content p{
+	margin: 0;
+}
+
+.why-choose-image{
+	position: relative;
+	z-index: 1;
+}
+
+
+
+/************************************/
+/***     07.1 Clinic Video css	  ***/
+/************************************/
+
+.intro-clinic-video {
+    padding: 100px 0 50px;
+  }
+  
+  .visit-clinic {
+    position: relative;
+    background: url('/assets/img/backgrounds/visit-clinic-bg.png') no-repeat;
+    background-position: center center;
+    background-size: auto;
+    border-radius: 40px;
+    padding: 150px 0;
+  }
+  
+  .visit-clinic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    border-radius: 40px;
+    opacity: 60%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .visit-clinic-content {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .visit-clinic-content .section-title h3,
+  .visit-clinic-content .section-title h2 {
+    color: var(--white-color);
+  }
+  
+  .visit-clinic-content .section-title h3::before {
+    filter: brightness(0) invert(1);
+  }
+  
+  .visit-clinic-btn .play-btn {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5em;
+    color: var(--accent-color);
+    background: var(--white-color);
+    padding: 14px 50px 14px 20px;
+    border-radius: 99px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    cursor: none;
+    z-index: 1;
+  }
+  
+  .visit-clinic-btn .play-btn:hover {
+    background-color: transparent;
+    color: var(--white-color);
+  }
+  
+  .visit-clinic-btn .play-btn::before {
+    content: '\f04b';
+    font-family: 'Font Awesome 6 Free';
+    font-size: 12px;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    transform: translate(-10px, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .visit-clinic-btn .play-btn:hover:before {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+  }
+  
+  .visit-clinic-btn .play-btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 99px;
+    background: var(--primary-color);
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+  }
+  
+  .visit-clinic-btn .play-btn:hover::after {
+    width: 106%;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--white-color);
+    border: none;
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s;
+  }
+  
+  .close-btn:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Styling for the iframe video */
+  #videoDialog iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    max-width: 560px;
+    max-height: 315px;
+  }
+  
+  /* Main dialog styling */
+  #videoDialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: hidden;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Ensures the backdrop is semi-transparent */
+  #videoDialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.8); /* Darkened backdrop */
+    backdrop-filter: blur(3px); /* Optional blur effect */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    #videoDialog iframe {
+      width: 90vw; /* Scale down width to fit smaller screens */
+      height: calc(90vw * 9 / 16); /* Maintain 16:9 aspect ratio */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #videoDialog iframe {
+      width: 100vw; /* Full width on very small screens */
+      height: calc(100vw * 9 / 16); /* Maintain 16:9 aspect ratio */
+    }
+  }
+
+
+
+/************************************/
+/***     07.2 Counter css	        ***/
+/************************************/
+
+.our-counter {
+    padding: 50px 0 70px;
+  }
+  
+  .counter-item {
+    height: calc(100% - 30px);
+    margin-bottom: 30px;
+  }
+  
+  .counter-title {
+    border-bottom: 1px solid var(--dark-divider-color);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .counter-title h2 {
+    font-size: 44px;
+    margin-bottom: 5px;
+  }
+  
+  .counter-title h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .counter-content p {
+    margin: 0;
+  }
+  
+  
+  /************************************/
+/***      10. Our Team Css	      ***/
+/************************************/
+
+.our-team{
+	position: relative;
+	padding: 100px 0 70px;
+	background: var(--secondary-color) url('/assets/img/backgrounds/our-team-bg.png') no-repeat;
+	background-position: top center;
+	background-size: auto;
+}
+
+.our-team .icon-star-image{
+	position: absolute;
+	top: auto;
+    bottom: 0;
+    left: 0;
+	transform: translate(-30px, -50%);
+}
+
+.team-member-item{
+	position: relative;
+	height: calc(100% - 30px);
+	margin-bottom: 30px;
+	z-index: 1;
+}
+
+.team-image{
+    position: relative;
+    overflow: hidden;
+	border-radius: 30px;
+	margin-bottom: 20px;
+}
+
+.team-image img{
+	width: 100%;
+	aspect-ratio: 1/1.2;
+	object-fit: cover;
+	transition: all 0.5s ease-in-out;
+}
+
+.team-member-item:hover .team-image img{
+    transform: scale(1.1);
+}
+
+.team-content{
+text-align: center;
+}
+ 
+.team-content h3{
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.team-content p{
+	margin: 0;
+}
+
+.team-social-icon{
+	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	margin: 0 auto; 
+	transform: translateY(101%);
+	text-align: center;
+	z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.team-member-item:hover .team-social-icon{
+	transform: translateY(-20px);
+}
+
+.team-social-icon ul{
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.team-social-icon ul li{
+	display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.team-social-icon ul li:last-child{
+	margin-right: 0;
+}
+
+.team-social-icon ul li a{
+	height: 38px;
+	width: 38px;
+	background-color: var(--primary-color);
+	border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-social-icon ul li a i{
+    color: var(--white-color);
+    font-size: 18px;
+	transition: all 0.3s ease-in-out;
+}
+
+.team-social-icon ul li a:hover{
+	background: var(--accent-color);
+}
+
+
+
+/************************************/
+/***   11. Our Testimonials Css   ***/
+/************************************/
+
+.our-testimonials{
+	padding: 100px 0;
+}
+
+.our-testimonials .section-title{
+	text-align: center;
+}
+
+.testimonial-image{
+	position: relative;
+	padding-bottom: 90px;
+	margin-right: 20px;
+}
+
+.testimonial-img img{
+	aspect-ratio: 1 / 1.1;
+	border-radius: 40px;
+	object-fit: cover;
+}
+
+.testimonial-rating-box{
+	position: absolute;
+	background: var(--accent-color);
+	border: 6px solid var(--white-color);
+	border-radius: 30px;
+	right: 0;
+	bottom: 0;
+	padding: 30px;
+	max-width: 450px;
+}
+
+.rating-counter-item{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid var(--divider-color);
+}
+
+.rating-counter-item .rating-counter-number{
+	min-width: 125px;
+	margin-right: 20px;
+}
+
+.rating-counter-item .rating-counter-number h3{
+	color: var(--white-color);
+	font-size: 44px;
+}
+
+.rating-counter-item .rating-counter-content{
+	width: calc(100% - 145px);
+}
+
+.rating-counter-item .rating-counter-content p{
+	color: var(--white-color);
+	margin: 0;
+}
+
+.service-rating ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.service-rating ul li{
+	color: var(--white-color);
+	margin-right: 20px;
+}
+
+.service-rating ul li:last-child{
+	margin-right: 0;
+}
+
+.service-rating ul li i{
+    font-size: 14px;
+    color: #FFA800;
+}
+
+.our-testimonials .swiper-wrapper{
+	cursor: none;
+}
+
+.testimonial-item .testimonial-quote-image{
+	margin-bottom: 30px;
+}
+
+.testimonial-item .testimonial-quote-image img{
+	max-width: 50px;
+}
+
+.testimonial-item .testimonial-content{
+	margin-bottom: 30px;
+}
+
+.testimonial-content p{
+	color: var(--primary-color);
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0;
+}
+
+.testimonial-item .testimonial-body{
+	display: flex;
+	align-items: center;
+}
+
+.testimonial-body .author-image{
+	margin-right: 10px;
+}
+
+.testimonial-body .author-image img{
+	max-width: 64px;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.testimonial-body .author-content{
+	width: calc(100% - 74px);
+}
+
+.testimonial-body .author-content h3{
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.testimonial-body .author-content p{
+	margin: 0;
+}
+
+.testimonial-btn{
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	margin-top: 40px;
+}
+
+.testimonial-slider .testimonial-button-next,
+.testimonial-slider .testimonial-button-prev{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	background-color: var(--accent-color);
+	border-radius: 6px;
+	transition: all 0.4s ease-in-out;
+}
+
+.testimonial-slider .testimonial-button-next{
+	margin-left: 20px;
+}
+
+
+.testimonial-slider .testimonial-button-next:hover,
+.testimonial-slider .testimonial-button-prev:hover{
+	background-color: var(--primary-color);
+}
+
+.testimonial-slider .testimonial-button-next::before,
+.testimonial-slider .testimonial-button-prev::before{
+	content: '';
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('/assets/img/general/arrow-white.png') no-repeat center center;
+    background-size: 12px auto;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.testimonial-slider .testimonial-button-prev::before{
+	transform: rotate(225deg);
+}
