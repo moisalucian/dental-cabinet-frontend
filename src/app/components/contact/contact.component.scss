@@ -53,6 +53,80 @@ h2 {
   color: var(--text-color);
 }
 
+/************************************/
+/*** Social Media Section Styles ***/
+/************************************/
+.social-media-item img {
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Keep consistent aspect ratio */
+    max-width: 100%; /* Ensure it scales within its container */
+    object-fit: contain; /* Keeps the image proportions intact */
+}
+
+.social-media-section {
+    padding: 100px 0;
+}
+
+.social-media-section .section-title {
+    margin-bottom: 50px;
+	margin-top:0px;
+}
+
+.social-media-card {
+    border: 1px solid var(--dark-divider-color);
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 4px 40px 0px #0000000F;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-media-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 60px 0px #0000001A;
+}
+
+.social-media-card .icon-box {
+    background: var(--secondary-color);
+    border-radius: 100px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+
+.social-media-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.social-media-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.social-media-card .btn-social {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-media-card .btn-social:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
 
 /************************************/
 /***   25. Contact us Page css	  ***/
@@ -75,10 +149,10 @@ h2 {
 	margin-bottom: 30px;
 }
 
-/* .contact-us-content .col-md-6:nth-last-child(-n + 2) .contact-us-item{
+.contact-us-content .col-md-6:nth-last-child(-n + 2) .contact-us-item{
 	height: auto;
 	margin-bottom: 0;
-} */
+} 
 
 .contact-us-item .icon-box{
 	background: var(--secondary-color);
@@ -99,6 +173,7 @@ h2 {
 	font-size: 20px;
 	font-weight: 600;
 	margin-bottom: 20px;
+	margin-top: 0px;
 }
 
 .contact-us-item .contact-info-content p{
@@ -140,4 +215,16 @@ h2 {
     border-radius: 10px;
     color: var(--primary-color);
     box-shadow: none;
+}
+
+.ig-typography h3 {
+	margin-top: 0 !important;
+}
+
+.h3.wow.fadeInUp {
+	margin-top: 0 !important;
+}
+
+.h2 {
+	margin-top: 0 !important;
 }

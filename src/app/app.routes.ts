@@ -12,6 +12,11 @@ export const routes: Routes = [
             import('./components/despre-noi/despre-noi.component').then((m) => m.DespreNoiComponent)
     },
     {
+        path: 'servicii',
+        loadComponent: () =>
+            import('./components/servicii/servicii.component').then((m) => m.ServiciiComponent)
+    },
+    {
         path: 'tarife',
         loadComponent: () =>
             import('./components/tarife/tarife.component').then((m) => m.TarifeComponent)
