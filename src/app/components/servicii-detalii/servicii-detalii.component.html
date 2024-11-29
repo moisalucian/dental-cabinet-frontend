@@ -1,0 +1,142 @@
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Page Header Box Start -->
+                <div class="page-header-box">
+                    <h1 class="text-anime-style-2" data-cursor="-opaque"><span>{{ getSplitTitle(serviceDetails?.title).firstWord }}</span>
+                        {{ getSplitTitle(serviceDetails?.title).remainingWords }} </h1>
+                    <nav class="wow fadeInUp">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">Acasa</a></li>
+                            <li class="breadcrumb-item"><a href="/servicii">Servicii</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{{ serviceDetails?.title }}</li>
+                        </ol>
+                    </nav>
+                </div>
+                <!-- Page Header Box End -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+
+<!-- Page Service Single Start -->
+<div class="page-service-single">
+    <div class="container">
+      <div class="row">
+        <!-- Sidebar Section -->
+        <div class="col-lg-4">
+          <div class="service-sidebar">
+            <div class="service-catagery-list wow fadeInUp">
+              <h3>Serviciile Noastre</h3>
+              <ul>
+                <li *ngFor="let service of services">
+                  <a [routerLink]="['/servicii', service.slug]" [class.active]="service.slug === serviceDetails?.slug">
+                    {{ service.title }}
+                  </a>
+                </li>
+              </ul>
+            </div>
+  
+            <!-- Sidebar CTA Section -->
+            <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.25s">
+              <div class="icon-box">
+                <img src="assets/img/icons/icon-cta.png" alt="">
+              </div>
+              <div class="cta-content">
+                <h3>Ai nevoie de ajutor?</h3>
+                <p>
+                  Programează-ți acum o consultație și descoperă cum îți putem îmbunătăți zâmbetul!
+                </p>
+              </div>
+              <div class="cta-contact-btn">
+                <a href="/contact" class="btn-default">Contactează-ne</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Main Content Section -->
+        <div class="col-lg-8">
+          <div class="service-single-content">
+            <!-- Featured Image -->
+            <div class="service-featured-image">
+              <figure class="reveal image-anime">
+                <img [src]="serviceDetails?.featuredImage" [alt]="serviceDetails?.title">
+              </figure>
+            </div>
+  
+            <!-- Dynamic Content -->
+            <div class="service-entry">
+              <h3 class="wow fadeInUp">{{ serviceDetails?.title }}</h3>
+              <p class="wow fadeInUp" data-wow-delay="0.2s">{{ serviceDetails?.description }}</p>
+              <p class="wow fadeInUp" data-wow-delay="0.4s">{{ serviceDetails?.additionalInfo }}</p>
+  
+              <!-- Dynamic List Section -->
+              <h3 class="wow fadeInUp" data-wow-delay="0.6s">Beneficii</h3>
+              <ul class="wow fadeInUp" data-wow-delay="0.8s">
+                <li *ngFor="let benefit of serviceDetails?.benefits">{{ benefit }}</li>
+              </ul>
+  
+              <!-- Additional Images -->
+              <div class="service-entry-image">
+                <div class="row">
+                  <div *ngFor="let image of serviceDetails?.extraImages" class="col-md-6 col-12">
+                    <div class="service-entry-img">
+                      <figure class="image-anime reveal">
+                        <img [src]="image" [alt]="serviceDetails?.title">
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Dynamic Additional Paragraph -->
+              <p class="wow fadeInUp" data-wow-delay="0.2s">{{ serviceDetails?.conclusion }}</p>
+            </div>
+          </div>
+  
+          <!-- FAQ Section -->
+          <div *ngIf="serviceDetails?.faqs?.length" class="service-faqs">
+            <div class="faqs-section-title">
+              <h2 class="text-anime-style-2" data-cursor="-opaque">Întrebări frecvente</h2>
+            </div>
+            <div class="faq-accordion" id="accordion">
+              <div
+                *ngFor="let faq of serviceDetails.faqs; let i = index"
+                class="accordion-item wow fadeInUp"
+                [attr.data-wow-delay]="i * 0.25 + 's'"
+              >
+                <h2 class="accordion-header" [id]="'heading' + i">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#collapse' + i"
+                    aria-expanded="false"
+                    [attr.aria-controls]="'collapse' + i"
+                  >
+                    {{ faq.question }}
+                  </button>
+                </h2>
+                <div
+                  [id]="'collapse' + i"
+                  class="accordion-collapse collapse"
+                  [attr.aria-labelledby]="'heading' + i"
+                  data-bs-parent="#accordion"
+                >
+                  <div class="accordion-body">
+                    <p>{{ faq.answer }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Service Single End -->

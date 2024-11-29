@@ -24,162 +24,20 @@
 <div class="page-services">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-6">
+            <div *ngFor="let service of services" class="col-lg-3 col-md-6">
                 <!-- Service Item Start -->
-                <div class="service-item wow fadeInUp">
+                <div class="service-item">
                     <div class="icon-box">
                         <div class="img">
-                            <img src="assets/img/icons/icon-services-1.png" alt="">
+                            <img src="assets/img/icons/icon-services-{{ getIconId(service.slug) }}.png" alt="{{ service.title }}">
                         </div>
                     </div>
                     <div class="service-body">
-                        <h3>Îngrijire dentară generală</h3>
-                        <p>Oferim îngrijire dentară completă, de la consultații de rutină la tratamente preventive,
-                            pentru a
-                            asigura
-                            sănătatea și confortul pe termen lung al întregii tale familii.</p>
+                        <h3>{{ service.title }}</h3>
+                        <p>{{ service.description }}</p>
                     </div>
                     <div class="read-more-btn">
-                        <a href="#">afla mai multe</a>
-                    </div>
-                </div>
-                <!-- Service Item End -->
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <!-- Service Item Start -->
-                <div class="service-item wow fadeInUp" data-wow-delay="0.25s">
-                    <div class="icon-box">
-                        <div class="img">
-                            <img src="assets/img/icons/icon-services-2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="service-body">
-                        <h3>Implanturi dentare</h3>
-                        <p>Refacem zâmbetul și funcționalitatea danturii cu implanturi dentare durabile și estetice,
-                            care se
-                            integrează perfect pentru un aspect natural și o masticație fără compromisuri.</p>
-                    </div>
-                    <div class="read-more-btn">
-                        <a href="#">afla mai multe</a>
-                    </div>
-                </div>
-                <!-- Service Item End -->
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <!-- Service Item Start -->
-                <div class="service-item wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="icon-box">
-                        <div class="img">
-                            <img src="assets/img/icons/icon-services-3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="service-body">
-                        <h3>Stomatologie estetică</h3>
-                        <p>Redefinim frumusețea zâmbetului tău cu tratamente estetice personalizate, de la fațete
-                            dentare la
-                            remodelări, pentru o dantură echilibrată și armonioasă.</p>
-                    </div>
-                    <div class="read-more-btn">
-                        <a href="#">read more</a>
-                    </div>
-                </div>
-                <!-- Service Item End -->
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <!-- Service Item Start -->
-                <div class="service-item wow fadeInUp" data-wow-delay="0.75s">
-                    <div class="icon-box">
-                        <div class="img">
-                            <img src="assets/img/icons/icon-services-4.png" alt="">
-                        </div>
-                    </div>
-                    <div class="service-body">
-                        <h3>Albire dentară</h3>
-                        <p>Obține un zâmbet strălucitor și încrezător cu serviciile noastre profesionale de albire
-                            dentară, care
-                            oferă rezultate rapide, sigure și de durată.</p>
-                    </div>
-                    <div class="read-more-btn">
-                        <a href="#">read more</a>
-                    </div>
-                </div>
-                <!-- Service Item End -->
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <!-- Service Item Start -->
-                <div class="service-item wow fadeInUp" data-wow-delay="0.8s">
-                    <div class="icon-box">
-                        <div class="img">
-                            <img src="assets/img/icons/icon-services-5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="service-body">
-                        <h3>Îngrijire dentară pediatrică</h3>
-                        <p>Suntem încântați să vă cunoaștem și să oferim cea mai bună îngrijire dentară pentru familia dumneavoastră.</p>
-                    </div>
-                    <div class="read-more-btn">
-                        <a href="#">read more</a>
-                    </div>
-                </div>
-                <!-- Service Item End -->
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <!-- Service Item Start -->
-                <div class="service-item wow fadeInUp" data-wow-delay="1s">
-                    <div class="icon-box">
-                        <div class="img">
-                            <img src="assets/img/icons/icon-services-6.png" alt="">
-                        </div>
-                    </div>
-                    <div class="service-body">
-                        <h3>Îngrijire orală avansată</h3>
-                        <p>Vă așteptăm cu entuziasm pentru a vă oferi cele mai avansate servicii de îngrijire orală pentru familia dumneavoastră.</p>
-                    </div>
-                    <div class="read-more-btn">
-                        <a href="#">read more</a>
-                    </div>
-                </div>
-                <!-- Service Item End -->
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <!-- Service Item Start -->
-                <div class="service-item wow fadeInUp" data-wow-delay="1.2s">
-                    <div class="icon-box">
-                        <div class="img">
-                            <img src="assets/img/icons/icon-services-7.png" alt="">
-                        </div>
-                    </div>
-                    <div class="service-body">
-                        <h3>Stomatologie confortabilă</h3>
-                        <p>Ne bucurăm să vă întâmpinăm și să vă oferim servicii stomatologice personalizate, cu accent pe confort și îngrijire de calitate.</p>
-                    </div>
-                    <div class="read-more-btn">
-                        <a href="#">read more</a>
-                    </div>
-                </div>
-                <!-- Service Item End -->
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <!-- Service Item Start -->
-                <div class="service-item wow fadeInUp" data-wow-delay="1.4s">
-                    <div class="icon-box">
-                        <div class="img">
-                            <img src="assets/img/icons/icon-services-8.png" alt="">
-                        </div>
-                    </div>
-                    <div class="service-body">
-                        <h3>Reînnoirea zâmbetului</h3>
-                        <p>Vă ajutăm să redescoperiți încrederea în zâmbetul dumneavoastră prin soluții dentare inovatoare și de înaltă calitate.</p>
-                    </div>
-                    <div class="read-more-btn">
-                        <a href="#">read more</a>
+                        <a [routerLink]="['/servicii', service.slug]">Afla mai multe</a>
                     </div>
                 </div>
                 <!-- Service Item End -->

@@ -1,0 +1,332 @@
+/* Page Header Styles */
+.page-header {
+    background: var(--secondary-color) url('/assets/img/backgrounds/page-header-bg.png') no-repeat;
+    background-position: center center;
+    background-size: auto;
+    padding: 100px 0;
+  }
+  
+  .page-header-box h1 {
+    font-size: 54px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+  }
+  
+  .page-header-box h1 span {
+    color: var(--primary-color);
+  }
+  
+  .page-header-box ol {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .page-header-box ol li.breadcrumb-item {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+  
+  .page-header-box ol li.breadcrumb-item a {
+    color: inherit;
+  }
+  
+  .page-header-box ol .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--accent-color);
+  }
+  
+  /* Sample Wrapper */
+  .sample-wrapper {
+    overflow-y: auto;
+    max-height: fit-content;
+    margin: 8px;
+    text-align: center;
+  }
+  
+  /* h2 Style */
+  h2 {
+    margin-bottom: 16px;
+    text-align: center;
+    color: var(--text-color);
+  }
+
+
+/************************************/
+/***    17. Service Single css	  ***/
+/************************************/
+
+.page-service-single{
+	padding: 100px 0;
+}
+
+.service-sidebar{
+	margin-right: 25px;
+    margin-bottom: 40px;
+	position: sticky;
+	top: 20px;
+}
+
+.service-catagery-list{
+	background-color: var(--secondary-color);
+	border-radius: 30px;
+	padding: 30px;
+	margin-bottom: 40px;
+}
+
+.service-catagery-list h3{
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+}
+
+.service-catagery-list ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.service-catagery-list ul li{
+	border-bottom: 1px solid var(--dark-divider-color);
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+
+.service-catagery-list ul li:last-child{
+	border: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.service-catagery-list ul li a{
+	display: block;
+    position: relative;
+    color: var(--primary-color);
+	text-transform: capitalize;
+	transition: all 0.3s ease-in-out;
+}
+
+.service-catagery-list ul li:hover a{
+	color: var(--accent-color);
+}
+
+.service-catagery-list ul li a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+	transform: translate(0px, -50%);
+	background-image: url('/assets/img/general/arrow-blue.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 12px auto;
+	width: 12px;
+	height: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-catagery-list ul li:hover a::after{
+	transform: translate(0px, -50%) rotate(45deg);
+}
+
+.sidebar-cta-box{
+	background: var(--accent-color);
+	border-radius: 30px;
+	padding: 40px;
+	text-align: center;
+}
+
+.sidebar-cta-box .icon-box{
+	margin-bottom: 30px;
+}
+
+.sidebar-cta-box .icon-box img{
+	max-width: 64px;
+}
+
+.sidebar-cta-box .cta-content{
+	margin-bottom: 20px;
+}
+
+.sidebar-cta-box .cta-content h3{
+	color: var(--white-color);
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.sidebar-cta-box .cta-content p{
+	color: var(--white-color);
+	margin: 0;
+}
+
+.cta-contact-btn .btn-default{
+	background: var(--white-color);
+	color: var(--accent-color);
+}
+
+.cta-contact-btn .btn-default::before{
+	background-color: var(--accent-color);
+	background-image: url('/assets/img/general/arrow-white.png');
+	background-repeat: no-repeat ;
+    background-position: center center;
+	background-size: 10px auto;
+}
+
+.cta-contact-btn .btn-default:hover{
+	background-color: transparent;
+	color: var(--white-color);
+}
+
+.service-single-content{
+	padding-bottom: 100px;
+}
+
+.service-featured-image{
+	margin-bottom: 30px;
+}
+
+.service-featured-image figure{
+	display: block;
+}
+
+.service-featured-image img{
+	aspect-ratio: 1 / 0.61;
+	object-fit: cover;
+	border-radius: 40px;
+}
+
+.service-entry h2{
+	font-size: 44px;
+	margin-bottom: 30px;
+}
+
+.service-entry h3{
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+}
+
+.service-entry p{
+	margin-bottom: 30px;
+}
+
+.service-entry p:last-child{
+	margin-bottom: 0px;
+}
+
+.service-entry ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin-bottom: 30px;
+}
+
+.service-entry ul li{
+	position: relative;
+    width: calc(50% - 10px);
+	color: var(--primary-color);
+	font-size: 16px;
+	font-weight: 600;
+	padding-left: 30px;
+	text-transform: capitalize;
+}
+
+.service-entry ul li:before{
+	content: '\f058';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--accent-color);
+    display: inline-block;
+    line-height: normal;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+.service-entry-image{
+	margin-bottom: 30px;
+}
+
+.service-entry-img figure,
+.service-entry-img figure{
+	display: block;
+    margin-bottom: 10px !important;
+}
+
+.service-entry-img img,
+.service-entry-img img{
+	aspect-ratio: 1 / 0.8;
+    object-fit: cover;
+    margin-bottom: 20 px;
+	border-radius: 40px;
+}
+
+.faqs-section-title{
+	margin-bottom: 60px;
+}
+
+.faqs-section-title h2{
+	font-size: 44px;
+}
+
+.service-faqs .faq-accordion .accordion-item{
+	border: 2px solid var(--dark-divider-color);
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.service-faqs .faq-accordion .accordion-item:last-child{
+	margin-bottom: 0;
+}
+
+.service-faqs .faq-accordion .accordion-item .accordion-button::after,
+.service-faqs .faq-accordion .accordion-item .accordion-button.collapsed::after{
+	content: '';
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	bottom: auto;
+	transform: translate(-20px, -50%) rotate(135deg);
+	background-image: url('/assets/img/general/arrow-white.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 8px auto;
+	border-radius: 50%;
+	background-color: var(--accent-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.service-faqs .faq-accordion .accordion-item .accordion-button.collapsed::after{
+	transform: translate(-20px, -50%) rotate(45deg);
+}
+
+.service-faqs .accordion-header .accordion-button{
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.2em;
+	padding: 15px 50px 15px 20px;
+}
+
+.service-faqs .accordion-body{
+	padding: 0 20px 20px 20px;
+}
+
+.service-faqs .accordion-body p{
+	margin: 0;
+}

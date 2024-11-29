@@ -17,6 +17,11 @@ export const routes: Routes = [
             import('./components/servicii/servicii.component').then((m) => m.ServiciiComponent)
     },
     {
+        path: 'servicii/:slug',
+        loadComponent: () =>
+            import('./components/servicii-detalii/servicii-detalii.component').then((m) => m.ServiciiDetaliiComponent)
+    },
+    {
         path: 'tarife',
         loadComponent: () =>
             import('./components/tarife/tarife.component').then((m) => m.TarifeComponent)
