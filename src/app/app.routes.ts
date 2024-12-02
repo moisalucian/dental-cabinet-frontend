@@ -32,6 +32,16 @@ export const routes: Routes = [
             import('./components/blog-detalii/blog-detalii.component').then((m) => m.BlogDetaliiComponent)
     },
     {
+        path: 'echipa',
+        loadComponent: () =>
+            import('./components/echipa/echipa.component').then((m) => m.EchipaComponent)
+    },
+    {
+        path: 'galerie',
+        loadComponent: () =>
+            import('./components/galerie/galerie.component').then((m) => m.GalerieComponent)
+    },
+    {
         path: 'tarife',
         loadComponent: () =>
             import('./components/tarife/tarife.component').then((m) => m.TarifeComponent)

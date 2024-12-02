@@ -1,0 +1,44 @@
+<!-- Page Header Start -->
+<div class="page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- Page Header Box Start -->
+				<div class="page-header-box">
+					<h1 class="text-anime-style-2" data-cursor="-opaque">Galerie<span> Foto</span></h1>
+					<nav class="wow fadeInUp">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="/">Home</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Galerie</li>
+						</ol>
+					</nav>
+				</div>
+				<!-- Page Header Box End -->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Page Header End -->
+
+
+<!-- Photo Gallery Section Start -->
+<div class="our-gallery-page">
+    <div class="container">
+      <!-- gallery section start -->
+      <div class="row gallery-items">
+        <div *ngFor="let image of galleryImages; let i = index" class="col-lg-3 col-md-4 col-6">
+          <!-- image gallery start -->
+          <div class="photo-gallery wow fadeInUp" [attr.data-wow-delay]="i * 0.2 + 's'" data-cursor-text="View">
+            <a [href]="image">
+              <figure>
+                <img [src]="image" alt="Imagine Galerie {{ i + 1 }}">
+              </figure>
+            </a>
+          </div>
+          <!-- image gallery end -->
+        </div>
+      </div>
+      <!-- gallery section end -->
+    </div>
+  </div>
+  <!-- Photo Gallery Section End -->

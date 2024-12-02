@@ -1,0 +1,151 @@
+/* Page Header Styles */
+.page-header {
+    background: var(--secondary-color) url('/assets/img/backgrounds/page-header-bg.png') no-repeat;
+    background-position: center center;
+    background-size: auto;
+    padding: 100px 0;
+  }
+  
+  .page-header-box h1 {
+    font-size: 54px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+  }
+  
+  .page-header-box h1 span {
+    color: var(--primary-color);
+  }
+  
+  .page-header-box ol {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .page-header-box ol li.breadcrumb-item {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+  
+  .page-header-box ol li.breadcrumb-item a {
+    color: inherit;
+  }
+  
+  .page-header-box ol .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--accent-color);
+  }
+  
+  /* Sample Wrapper */
+  .sample-wrapper {
+    overflow-y: auto;
+    max-height: fit-content;
+    margin: 8px;
+    text-align: center;
+  }
+  
+  /* h2 Style */
+  h2 {
+    margin-bottom: 16px;
+    text-align: center;
+    color: var(--text-color);
+  }
+
+
+/************************************/
+/***     22. Gallery Page css	  ***/
+/************************************/
+
+.our-gallery-page{
+	padding: 100px 0 70px; 
+}
+
+.photo-gallery{
+	margin-bottom: 30px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.photo-gallery a{
+	cursor: none;
+}
+
+.photo-gallery figure{
+	position: relative;
+}
+
+.photo-gallery figure::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--primary-color);
+	border-radius: 20px;
+	opacity: 0%;
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transform: scale(0);
+	transition: all 0.4s ease-in-out;
+}
+
+.photo-gallery:hover figure::before{
+	opacity: 80%;
+	visibility: visible;
+	transform: scale(1);
+}
+
+.photo-gallery figure::after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transform: translateY(-50%);
+	width: 65px;
+	height: 65px;
+	margin: 0 auto;
+	background: var(--accent-color) url('/assets/img/icons/icon-eye.png') no-repeat;
+	background-position: center center;
+	background-size: 40px auto;
+	border-radius: 50%;
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s ease-in-out;
+}
+
+.photo-gallery:hover figure::after{
+	opacity: 1;
+	visibility: visible;
+}
+
+.photo-gallery img{
+	position: relative;
+	aspect-ratio: 1 / 0.95;
+    object-fit: cover;
+	border-radius: 20px;
+}
+
+.mfp-arrow-left:before,
+.mfp-arrow-right:before{
+	border: none;
+}
+
+.mfp-arrow-left:after{
+	border-right: 13px solid var(--accent-color);
+	opacity: 1;
+}	
+
+.mfp-arrow-right:after{
+	border-left: 13px solid var(--accent-color);
+	opacity: 1;
+}
+
+
