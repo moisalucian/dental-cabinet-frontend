@@ -832,6 +832,33 @@ text-align: center;
 	background: var(--accent-color);
 }
 
+.our-team .team-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: center; /* Center-align items in the row */
+  gap: 30px; /* Spacing between items */
+}
+
+.team-member-item {
+  flex: 1 1 calc(25% - 30px); /* Default: 4 columns per row */
+  max-width: calc(25% - 30px); /* Ensure consistent card size */
+  margin: 0 auto; /* Center-align items if fewer members in a row */
+}
+
+@media (max-width: 991.98px) {
+  .team-member-item {
+      flex: 1 1 calc(50% - 30px); /* 2 columns per row */
+      max-width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .team-member-item {
+      flex: 1 1 100%; /* Single column */
+      max-width: 100%;
+  }
+}
+
 
 
 /************************************/

@@ -44,16 +44,5 @@ export class EchipaComponent {
         { icon: 'fa-brands fa-x-twitter', url: 'https://twitter.com/johanj' },
       ],
     },
-    {
-      name: 'Maria Alexandra Stan',
-      roles: ['Asistent - Front Desk'],
-      image: 'assets/img/echipa/maria-alexandrina-stan-1.png',
-      socialLinks: [
-        { icon: 'fa-brands fa-facebook-f', url: 'https://facebook.com/johanj' },
-        { icon: 'fa-brands fa-youtube', url: 'https://youtube.com/johanj' },
-        { icon: 'fa-brands fa-instagram', url: 'https://instagram.com/johanj' },
-        { icon: 'fa-brands fa-x-twitter', url: 'https://twitter.com/johanj' },
-      ],
-    },
   ];
 }

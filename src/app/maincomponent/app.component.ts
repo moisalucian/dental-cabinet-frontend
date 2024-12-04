@@ -3,18 +3,24 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '../components/header/header.component';
 import { FooterComponent } from '../components/footer/footer.component';
-import { HomeComponent } from '../components/home/home.component';
-import { TarifeComponent } from '../components/tarife/tarife.component';
-import { TermeniSiConditiiComponent } from '../components/termeni-si-conditii/termeni-si-conditii.component';
-import { ConfidentialitateComponent } from '../components/confidentialitate/confidentialitate.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HomeComponent, HeaderComponent, FooterComponent, TarifeComponent, TermeniSiConditiiComponent, ConfidentialitateComponent],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'dental-cabinet-frontend';
+  title = 'Edentall - Clinica Stomatologica';
+
+  isLoading: boolean = true;
+
+  ngOnInit() {
+    // Listen for the window load event to hide the preloader
+    window.onload = () => {
+      this.isLoading = false; // Hide preloader after window has loaded
+    };
+  }
 }

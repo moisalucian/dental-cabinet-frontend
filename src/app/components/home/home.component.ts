@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { EchipaComponent } from '../echipa/echipa.component';
 import 'magnific-popup';
 import { CommonModule } from '@angular/common';
+declare var $: any;
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./home.component.scss'],
   providers: [EchipaComponent]
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit,AfterViewInit {
   firstFourTeamMembers: any[] = [];
 
   constructor(private titleService: Title, 
@@ -33,5 +34,21 @@ export class HomeComponent implements OnInit {
       { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
     ]);
+  }
+
+  ngAfterViewInit() {
+    // Initialize Magnific Popup on the '.popup-video' class
+    $('.popup-video').magnificPopup({
+      type: 'iframe', // Use iframe type for YouTube video
+      iframe: {
+        patterns: {
+          youtube: {
+            index: 'youtube.com',
+            id: 'v=',
+            src: 'https://www.youtube.com/embed/%id%?autohide=1&showinfo=0' // Embed URL format
+          }
+        }
+      }
+    });
   }
 }
