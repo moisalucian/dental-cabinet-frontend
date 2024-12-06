@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '../components/header/header.component';
 import { FooterComponent } from '../components/footer/footer.component';
+declare var WOW: any;
 
 
 @Component({
@@ -22,5 +23,6 @@ export class AppComponent {
     window.onload = () => {
       this.isLoading = false; // Hide preloader after window has loaded
     };
+    new WOW().init();
   }
 }

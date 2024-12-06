@@ -43,6 +43,6 @@ export class EchipaComponent {
         { icon: 'fa-brands fa-instagram', url: 'https://instagram.com/johanj' },
         { icon: 'fa-brands fa-x-twitter', url: 'https://twitter.com/johanj' },
       ],
-    },
+    }
   ];
 }

@@ -119,7 +119,7 @@ text-align: center;
     right: 0;
     bottom: 0;
 	margin: 0 auto; 
-	transform: translateY(101%);
+	// transform: translateY(101%);
 	text-align: center;
 	z-index: 1;
     transition: all 0.5s ease-in-out;
@@ -187,6 +187,11 @@ text-align: center;
     flex: 1 1 calc(25% - 30px); /* Default: 4 columns per row */
     max-width: calc(25% - 30px); /* Ensure consistent card size */
     margin: 0 auto; /* Center-align items if fewer members in a row */
+}
+
+.spacing-div {
+  height: 50px;
+  width: 100%;
 }
 
 @media (max-width: 991.98px) {

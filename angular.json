@@ -44,7 +44,8 @@
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "node_modules/swiper/swiper-bundle.min.js",
               "node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
-              "node_modules/gsap/dist/gsap.min.js"
+              "node_modules/gsap/dist/gsap.min.js",
+              "node_modules/wowjs/dist/wow.min.js"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
