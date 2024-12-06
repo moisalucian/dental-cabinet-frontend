@@ -50,7 +50,7 @@ html, body {
   
   /* Footer styling */
   .main-footer {
-    background: url('/assets/img/footer/footer-bg.png') no-repeat var(--primary-color);
+    background: url('/assets/img/footer/footer-bg.webp') no-repeat var(--primary-color);
     background-position: center center;
     background-size: auto;
     color: var(--white-color);
@@ -223,7 +223,7 @@ body{
 	height: 30px;
 	border-radius: 50%;
 	background-color: var(--white-color);
-	background-image: url('/assets/img/general/arrow-blue.png');
+	background-image: url('/assets/img/general/arrow-blue.webp');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 10px auto;
@@ -380,7 +380,7 @@ body{
 	top: 50%;
 	left: 0;
 	transform: translateY(-50%);
-	background: url('/assets/img/icons/icon-sub-heading.png') no-repeat;
+	background: url('/assets/img/icons/icon-sub-heading.svg') no-repeat;
 	background-position: left center;
 	background-size: cover;
 	width: 12px;

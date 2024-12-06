@@ -1,6 +1,6 @@
 /* Page Header Styles */
 .page-header {
-    background: var(--secondary-color) url('/assets/img/backgrounds/page-header-bg.png') no-repeat;
+    background: var(--secondary-color) url('/assets/img/backgrounds/page-header-bg.svg') no-repeat;
     background-position: center center;
     background-size: auto;
     padding: 100px 0;
@@ -120,7 +120,7 @@
     top: 50%;
     right: 0px;
 	transform: translate(0px, -50%);
-	background-image: url('/assets/img/general/arrow-blue.png');
+	background-image: url('/assets/img/general/arrow-blue.webp');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 12px auto;
@@ -171,7 +171,7 @@
 
 .cta-contact-btn .btn-default::before{
 	background-color: var(--accent-color);
-	background-image: url('/assets/img/general/arrow-white.png');
+	background-image: url('/assets/img/general/arrow-white.webp');
 	background-repeat: no-repeat ;
     background-position: center center;
 	background-size: 10px auto;
@@ -297,7 +297,7 @@
 	top: 50%;
 	bottom: auto;
 	transform: translate(-20px, -50%) rotate(135deg);
-	background-image: url('/assets/img/general/arrow-white.png');
+	background-image: url('/assets/img/general/arrow-white.webp');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 8px auto;

@@ -121,7 +121,7 @@ h5 {
 }
 
 .about-image {
-  background: url('/assets/img/backgrounds/about-bg-image.png') no-repeat;
+  background: url('/assets/img/backgrounds/about-bg-image.svg') no-repeat;
   background-position: center center;
   background-size: auto;
   position: relative;
@@ -220,7 +220,7 @@ h5 {
 
 .our-services {
   position: relative;
-  background-image: url('/assets/img/backgrounds/our-service-bg.png'), linear-gradient(180deg, var(--secondary-color) 65%, var(--white-color) 35%);
+  background-image: url('/assets/img/backgrounds/our-service-bg.svg'), linear-gradient(180deg, var(--secondary-color) 65%, var(--white-color) 35%);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: auto;
@@ -331,7 +331,7 @@ h5 {
   top: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/assets/img/general/arrow-white.png');
+  background-image: url('/assets/img/general/arrow-white.webp');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 10px auto;
@@ -371,7 +371,7 @@ h5 {
 
 .visit-clinic {
   position: relative;
-  background: url('/assets/img/backgrounds/visit-clinic-bg.png') no-repeat;
+  background: url('/assets/img/backgrounds/visit-clinic-bg.webp') no-repeat;
   background-position: center center;
   background-size: auto;
   border-radius: 40px;
@@ -612,7 +612,7 @@ h5 {
   
 .why-choose-us{
 	position: relative;
-	background: var(--secondary-color) url('/assets/img/backgrounds/why-choose-us-bg.png') no-repeat;
+	background: var(--secondary-color) url('/assets/img/backgrounds/why-choose-us-bg.svg') no-repeat;
 	background-position: top center;
 	background-size: auto;
 	padding: 100px 0;
@@ -773,7 +773,7 @@ h5 {
 .our-team{
 	position: relative;
 	padding: 100px 0 70px;
-	background: var(--secondary-color) url('/assets/img/backgrounds/our-team-bg.png') no-repeat;
+	background: var(--secondary-color) url('/assets/img/backgrounds/our-team-bg.svg') no-repeat;
 	background-position: top center;
 	background-size: auto;
 }
@@ -1082,7 +1082,7 @@ text-align: center;
     bottom: 0;
     left: 0;
     right: 0;
-    background: url('/assets/img/general/arrow-white.png') no-repeat center center;
+    background: url('/assets/img/general/arrow-white.webp') no-repeat center center;
     background-size: 12px auto;
     transform: rotate(45deg);
     display: flex;
@@ -1102,7 +1102,7 @@ text-align: center;
 .our-blog{
 	position: relative;
 	padding: 100px 0 70px;
-	background: var(--secondary-color) url('/assets/img/backgrounds/our-blog-bg.png') no-repeat;
+	background: var(--secondary-color) url('/assets/img/backgrounds/our-blog-bg.svg') no-repeat;
 	background-position: top 60px center;
 	background-size: auto;
 }
@@ -1179,7 +1179,7 @@ text-align: center;
     top: -2px;
     right: 0;
     bottom: 0;
-    background-image: url('/assets/img/general/arrow-white.png');
+    background-image: url('/assets/img/general/arrow-white.webp');
     background-repeat: no-repeat;
     background-position: center center;
 	  background-size: 10px auto;
@@ -1835,7 +1835,7 @@ text-align: center;
 	}
 
 	.post-entry blockquote{
-		background: var(--secondary-color) url('/assets/img/icons/icon-blockquote.png') no-repeat 30px 35px;
+		background: var(--secondary-color) url('/assets/img/icons/icon-blockquote.svg') no-repeat 30px 35px;
         background-size: 45px;
         padding: 25px 25px 25px 90px;
         margin-bottom: 20px;
@@ -2519,7 +2519,7 @@ text-align: center;
 	}
 
 	.post-entry blockquote{
-		background: var(--secondary-color) url('/assets/img/icons/icon-blockquote.png') no-repeat 20px 20px;
+		background: var(--secondary-color) url('/assets/img/icons/icon-blockquote.svg') no-repeat 20px 20px;
         background-size: 35px;
         padding: 55px 20px 20px 20px;
 	}

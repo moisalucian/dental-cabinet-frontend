@@ -14,7 +14,7 @@ export class EchipaComponent {
     {
       name: 'Dr. Baciu Bogdan',
       roles: ['Medic coordonator', 'Parodontologie', 'Ortodontie'],
-      image: 'assets/img/echipa/baciu-bogdan-1.png',
+      image: 'assets/img/echipa/baciu-bogdan-1.webp',
       socialLinks: [
         { icon: 'fa-brands fa-facebook-f', url: 'https://facebook.com/johanj' },
         { icon: 'fa-brands fa-youtube', url: 'https://youtube.com/johanj' },
@@ -25,7 +25,7 @@ export class EchipaComponent {
     {
       name: 'Larisa Tudor',
       roles: ['Asistent Medical'],
-      image: 'assets/img/echipa/larisa-tudor-1.png',
+      image: 'assets/img/echipa/larisa-tudor-1.webp',
       socialLinks: [
         { icon: 'fa-brands fa-facebook-f', url: 'https://facebook.com/johanj' },
         { icon: 'fa-brands fa-youtube', url: 'https://youtube.com/johanj' },
@@ -36,7 +36,7 @@ export class EchipaComponent {
     {
       name: 'Maria Alexandra Stan',
       roles: ['Asistent - Front Desk'],
-      image: 'assets/img/echipa/maria-alexandrina-stan-1.png',
+      image: 'assets/img/echipa/maria-alexandrina-stan-1.webp',
       socialLinks: [
         { icon: 'fa-brands fa-facebook-f', url: 'https://facebook.com/johanj' },
         { icon: 'fa-brands fa-youtube', url: 'https://youtube.com/johanj' },

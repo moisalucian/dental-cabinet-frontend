@@ -17,7 +17,7 @@ export class BlogDetaliiComponent implements OnInit {
     {
       slug: 'importanta-consultatiilor-dentare',
       title: 'Importanța consultațiilor dentare regulate',
-      image: 'assets/img/blog/blog-post-1.png',
+      image: 'assets/img/blog/blog-post-1.webp',
       paragraphsArea1: [
         'Consultațiile dentare regulate reprezintă unul dintre cele mai importante aspecte ale îngrijirii sănătății orale. Ele nu doar că ajută la menținerea unui zâmbet strălucitor, ci și la prevenirea unor afecțiuni grave care pot afecta întreaga sănătate a organismului. Prin evaluări periodice, medicul dentist poate identifica din timp orice problemă, de la carii incipiente până la semne timpurii ale bolilor gingivale sau chiar ale unor afecțiuni sistemice, precum diabetul.',
         'Mulți pacienți evită vizitele la dentist din cauza fricii sau a lipsei de timp, însă aceste consultații sunt esențiale pentru a evita tratamentele complexe și costisitoare pe termen lung. Un control de rutină nu durează mult, dar impactul său pozitiv asupra sănătății poate fi imens. În plus, prevenția este întotdeauna mai simplă, mai confortabilă și mai puțin costisitoare decât tratarea problemelor avansate.'
@@ -45,7 +45,7 @@ export class BlogDetaliiComponent implements OnInit {
     {
       slug: 'beneficii-albire-profesionala',
       title: 'Beneficiile albirii dentare profesionale',
-      image: 'assets/img/blog/blog-post-2.png',
+      image: 'assets/img/blog/blog-post-2.webp',
       paragraphsArea1: [
         'Un zâmbet strălucitor poate face o diferență enormă în felul în care te simți și cum te percep ceilalți. Albirea dentară profesională nu este doar un lux; este o investiție în încrederea ta și în sănătatea ta orală. Acest tratament modern și sigur poate transforma aspectul danturii tale în doar o ședință la cabinetul stomatologic.',
         'Albirea profesională oferă rezultate rapide și eficiente comparativ cu produsele over-the-counter. Tehnologiile avansate utilizate de specialiști asigură un tratament personalizat, adaptat nevoilor tale. În plus, acest proces este realizat sub supravegherea unui medic dentist, ceea ce garantează siguranța și eficiența procedurii.'
@@ -73,7 +73,7 @@ export class BlogDetaliiComponent implements OnInit {
     {
       slug: 'ghid-implanturi-dentare',
       title: 'Ghid complet pentru implanturile dentare',
-      image: 'assets/img/blog/blog-post-3.png',
+      image: 'assets/img/blog/blog-post-3.webp',
       paragraphsArea1: [
         'Implanturile dentare reprezintă soluția ideală pentru înlocuirea dinților pierduți, oferind atât funcționalitate, cât și estetică deosebită. Acestea sunt proiectate să arate, să se simtă și să funcționeze la fel ca dinții naturali, ceea ce le face o opțiune preferată de pacienți și medici stomatologi deopotrivă.',
         'Procesul de inserare a unui implant dentar implică fixarea unui șurub din titan în osul maxilar sau mandibular, acesta acționând ca o rădăcină artificială. După o perioadă de vindecare, pe acest implant se montează o coroană dentară personalizată, care completează zâmbetul pacientului și redă funcționalitatea completă a danturii.'
@@ -102,7 +102,7 @@ export class BlogDetaliiComponent implements OnInit {
     {
       slug: 'rolul-fluorului-prevenirea-cariilor',
       title: 'Rolul fluorului în prevenirea cariilor dentare',
-      image: 'assets/img/blog/blog-post-4.png',
+      image: 'assets/img/blog/blog-post-4.webp',
       paragraphsArea1: [
         'Fluorul joacă un rol esențial în menținerea sănătății orale, fiind unul dintre cele mai eficiente instrumente pentru prevenirea cariilor dentare. Acest mineral natural ajută la întărirea smalțului dentar, făcându-l mai rezistent la atacurile acide provocate de bacteriile din placa dentară. În plus, fluorul contribuie la remineralizarea zonelor în care smalțul a început să se degradeze, prevenind astfel apariția cariilor.',
         'De-a lungul timpului, utilizarea fluorului în stomatologie a revoluționat prevenția orală. Produsele precum pasta de dinți, apa de gură sau tratamentele profesionale cu fluor sunt acum pilonii unei igiene orale eficiente. Însă beneficiile acestui mineral nu se opresc aici: fluorul acționează și la nivel comunitar, prin fluorurarea apei potabile, o măsură dovedită științific în reducerea cariilor la nivel global.'
@@ -130,7 +130,7 @@ export class BlogDetaliiComponent implements OnInit {
     {
       slug: 'sensibilitatea-dentara-cauze-tratamente',
       title: 'Sensibilitatea dentară: cauze și tratamente',
-      image: 'assets/img/blog/blog-post-5.png',
+      image: 'assets/img/blog/blog-post-5.webp',
       paragraphsArea1: [
         'Sensibilitatea dentară este o problemă comună care afectează milioane de oameni din întreaga lume. Aceasta apare atunci când dinții reacționează la stimuli externi, cum ar fi alimentele sau băuturile reci, fierbinți, dulci sau acide. Disconfortul resimțit poate varia de la ușoară jenă până la durere intensă, afectând calitatea vieții și capacitatea de a te bucura de mesele preferate.',
         'De cele mai multe ori, sensibilitatea dentară este rezultatul expunerii dentinei, stratul interior al dintelui, cauzată de deteriorarea smalțului sau retragerea gingiilor. Acest lucru lasă nervii dinților vulnerabili la stimuli externi, generând o senzație neplăcută. Deși poate părea o problemă minoră, ignorarea sensibilității dentare poate duce la complicații mai grave în timp.'
@@ -158,7 +158,7 @@ export class BlogDetaliiComponent implements OnInit {
     {
       slug: 'avantajele-protezarii-dentare',
       title: 'Avantajele protezării dentare: soluții moderne',
-      image: 'assets/img/blog/blog-post-6.png',
+      image: 'assets/img/blog/blog-post-6.webp',
       paragraphsArea1: [
         'Protezarea dentară reprezintă o soluție esențială pentru pacienții care și-au pierdut unul sau mai mulți dinți. Această procedură modernă nu doar că restabilește funcționalitatea danturii, ci îmbunătățește semnificativ aspectul estetic și calitatea vieții. Datorită avansurilor tehnologice, protezele dentare de astăzi sunt mult mai confortabile, durabile și estetice decât cele din trecut.',
         'Indiferent dacă este vorba de proteze fixe, mobilizabile sau implanturi dentare, fiecare soluție este concepută pentru a răspunde nevoilor individuale ale pacienților. Alegerea tipului potrivit de proteză se face împreună cu medicul dentist, luând în considerare sănătatea orală, preferințele personale și bugetul pacientului.'
@@ -187,7 +187,7 @@ export class BlogDetaliiComponent implements OnInit {
     {
       slug: 'pasi-igiena-orala-corecta',
       title: 'Pași pentru o igienă orală corectă',
-      image: 'assets/img/blog/blog-post-7.png',
+      image: 'assets/img/blog/blog-post-7.webp',
       paragraphsArea1: [
         'O igienă orală corectă este esențială pentru menținerea sănătății dinților și gingiilor, prevenirea cariilor și a altor afecțiuni dentare. Nu doar că asigură un zâmbet strălucitor, dar contribuie și la bunăstarea generală a organismului. Bolile orale pot influența sănătatea întregului corp, fiind asociate cu afecțiuni precum boli cardiovasculare sau diabet.',
         'Începând de la o vârstă fragedă, este important să adoptăm obiceiuri sănătoase de îngrijire orală. Chiar dacă pare simplu, mulți oameni nu realizează corect periajul sau omit pași importanți în rutina zilnică. În acest articol, vom detalia pașii esențiali pentru a asigura o igienă orală optimă și pentru a menține sănătatea zâmbetului tău.'
@@ -217,7 +217,7 @@ export class BlogDetaliiComponent implements OnInit {
     {
       slug: 'alimentatie-sanatate-orala',
       title: 'Rolul alimentației în menținerea sănătății orale',
-      image: 'assets/img/blog/blog-post-8.png',
+      image: 'assets/img/blog/blog-post-8.webp',
       paragraphsArea1: [
         'Alimentația joacă un rol esențial în menținerea sănătății orale. Consumul de alimente sănătoase contribuie la întărirea dinților și la prevenirea cariilor, în timp ce obiceiurile alimentare nesănătoase pot favoriza apariția problemelor dentare. O dietă echilibrată, bogată în vitamine și minerale, sprijină sănătatea gingiilor și a smalțului dentar.',
         'Zahărul și alimentele acide sunt principalii inamici ai sănătății orale. Acestea creează un mediu prielnic pentru bacterii, care atacă smalțul și provoacă carii. În schimb, alimentele bogate în calciu, vitamina D și fosfor întăresc dinții și reduc riscul de deteriorare.'
@@ -244,7 +244,7 @@ export class BlogDetaliiComponent implements OnInit {
     {
       slug: 'importanta-ingrijirii-dentare-copii',
       title: 'Importanța îngrijirii dentare la copii',
-      image: 'assets/img/blog/blog-post-9.png',
+      image: 'assets/img/blog/blog-post-9.webp',
       paragraphsArea1: [
         'Îngrijirea dentară corectă începe încă din copilărie și joacă un rol crucial în dezvoltarea sănătății orale a celor mici. Deși dinții de lapte sunt temporari, aceștia au o importanță esențială pentru sănătatea orală generală, influențând modul în care copilul mănâncă, vorbește și zâmbește. Neglijarea sănătății orale în copilărie poate duce la probleme dentare care persistă și în viața adultă.',
         'Educația timpurie privind igiena orală și vizitele regulate la medicul dentist ajută la prevenirea cariilor și a altor afecțiuni. În plus, obiceiurile bune formate în copilărie vor deveni parte din rutina zilnică a copilului pe termen lung, asigurându-i un zâmbet sănătos pentru toată viața.'
@@ -273,7 +273,7 @@ export class BlogDetaliiComponent implements OnInit {
     {
       slug: 'pregatire-vizita-dentist-copii',
       title: 'Cum să-ți pregătești copilul pentru prima vizită la dentist',
-      image: 'assets/img/blog/blog-post-10.png',
+      image: 'assets/img/blog/blog-post-10.webp',
       paragraphsArea1: [
         'Prima vizită la dentist este un moment important pentru copil și pentru părinți. Aceasta reprezintă începutul unei relații de încredere cu medicul dentist și pune bazele unei rutine de îngrijire orală corectă. Cu toate acestea, mulți copii pot fi reticenți sau speriați de necunoscut.',
         'Pregătirea copilului pentru prima vizită la dentist este esențială pentru a transforma această experiență într-una pozitivă. Comunicarea deschisă, jocurile de rol și alegerea unui cabinet prietenos cu copiii sunt doar câteva strategii care pot ajuta.'

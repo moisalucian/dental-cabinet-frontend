@@ -1,6 +1,6 @@
 /* Page Header Styles */
 .page-header {
-    background: var(--secondary-color) url('/assets/img/backgrounds/page-header-bg.png') no-repeat;
+    background: var(--secondary-color) url('/assets/img/backgrounds/page-header-bg.svg') no-repeat;
     background-position: center center;
     background-size: auto;
     padding: 100px 0;
@@ -72,7 +72,7 @@
 
 .our-services {
     position: relative;
-    background-image: url('/assets/img/backgrounds/our-service-bg.png'), linear-gradient(180deg, var(--secondary-color) 65%, var(--white-color) 35%);
+    background-image: url('/assets/img/backgrounds/our-service-bg.svg'), linear-gradient(180deg, var(--secondary-color) 65%, var(--white-color) 35%);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: auto;
@@ -183,7 +183,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/assets/img/general/arrow-white.png');
+    background-image: url('/assets/img/general/arrow-white.webp');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 10px auto;

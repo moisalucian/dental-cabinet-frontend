@@ -1,6 +1,6 @@
 /* Page Header Styles */
 .page-header {
-    background: var(--secondary-color) url('/assets/img/backgrounds/page-header-bg.png') no-repeat;
+    background: var(--secondary-color) url('/assets/img/backgrounds/page-header-bg.svg') no-repeat;
     background-position: center center;
     background-size: auto;
     padding: 100px 0;
@@ -101,7 +101,7 @@
 	right: 0;
 	bottom: 0;
 	transform: translateY(6px);
-	background: url('/assets/img/general/arrow-blue.png') no-repeat center center;
+	background: url('/assets/img/general/arrow-blue.webp') no-repeat center center;
 	background-size: 12px auto;
 	width: 14px;
 	height: 14px;
@@ -152,7 +152,7 @@
 	top: 50%;
 	bottom: auto;
 	transform: translate(-20px, -50%) rotate(135deg);
-	background-image: url('/assets/img/general/arrow-white.png');
+	background-image: url('/assets/img/general/arrow-white.webp');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 8px auto;

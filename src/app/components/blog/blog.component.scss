@@ -1,6 +1,6 @@
 /* Page Header Styles */
 .page-header {
-    background: var(--secondary-color) url('/assets/img/backgrounds/page-header-bg.png') no-repeat;
+    background: var(--secondary-color) url('/assets/img/backgrounds/page-header-bg.svg') no-repeat;
     background-position: center center;
     background-size: auto;
     padding: 100px 0;
@@ -60,7 +60,7 @@
 .our-blog{
 	position: relative;
 	padding: 100px 0 70px;
-	background: var(--secondary-color) url('/assets/img/backgrounds/our-blog-bg.png') no-repeat;
+	background: var(--secondary-color) url('/assets/img/backgrounds/our-blog-bg.svg') no-repeat;
 	background-position: top 60px center;
 	background-size: auto;
 }
@@ -137,7 +137,7 @@
     top: -2px;
     right: 0;
     bottom: 0;
-    background-image: url('/assets/img/general/arrow-white.png');
+    background-image: url('/assets/img/general/arrow-white.webp');
     background-repeat: no-repeat;
     background-position: center center;
 	  background-size: 10px auto;
