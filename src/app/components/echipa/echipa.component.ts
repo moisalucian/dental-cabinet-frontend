@@ -13,7 +13,7 @@ export class EchipaComponent {
   teamMembers = [
     {
       name: 'Dr. Baciu Bogdan',
-      roles: ['Medic coordonator', 'Parodontologie', 'Ortodontie'],
+      roles: ['Medic coordonator', 'Protetica si Estetica Dentara'],
       image: 'assets/img/echipa/baciu-bogdan-1.webp',
       socialLinks: [
         { icon: 'fa-brands fa-facebook-f', url: 'https://facebook.com/johanj' },

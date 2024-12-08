@@ -4,6 +4,7 @@ import { EchipaComponent } from '../echipa/echipa.component';
 import 'magnific-popup';
 import { CommonModule } from '@angular/common';
 declare var $: any;
+declare var Swiper: any;
 
 @Component({
   selector: 'app-home',
@@ -13,16 +14,22 @@ declare var $: any;
   styleUrls: ['./home.component.scss'],
   providers: [EchipaComponent]
 })
-export class HomeComponent implements OnInit,AfterViewInit {
+export class HomeComponent implements OnInit, AfterViewInit {
+  // Define the width breakpoints
+  private desktopBreakpoint = 991;
+  private tabletBreakpoint = 768;
+
   firstFourTeamMembers: any[] = [];
 
-  constructor(private titleService: Title, 
+  constructor(
+    private titleService: Title,
     private metaService: Meta,
-    private echipaComponent: EchipaComponent) {}
+    private echipaComponent: EchipaComponent
+  ) {}
 
   ngOnInit(): void {
     // Set page title
-    this.titleService.setTitle("Edentall - Clinica Stomatologica");
+    this.titleService.setTitle('Edentall - Clinica Stomatologica');
     this.firstFourTeamMembers = this.echipaComponent.teamMembers.slice(0, 4);
 
     // Add meta tags
@@ -50,5 +57,58 @@ export class HomeComponent implements OnInit,AfterViewInit {
         }
       }
     });
+
+    this.initializeParallaxie();
+    window.addEventListener('resize', this.initializeParallaxie.bind(this)); // Handle window resize
+
+    // Initialize Swiper after the view has been rendered
+    const testimonialSlider = new Swiper('.testimonial-slider .swiper', {
+      slidesPerView: 1,
+      speed: 1000,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      navigation: {
+        nextEl: '.testimonial-button-next',
+        prevEl: '.testimonial-button-prev',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 1,
+        },
+        991: {
+          slidesPerView: 1,
+        }
+      }
+    });
+  }
+
+  ngOnDestroy() {
+    window.removeEventListener('resize', this.initializeParallaxie.bind(this)); // Cleanup event listener
+  }
+
+  private initializeParallaxie() {
+    const $parallaxie = $('.parallaxie');
+
+    // Only apply the Parallaxie effect if the screen is above the tablet breakpoint (768px)
+    if ($parallaxie.length && window.innerWidth > this.tabletBreakpoint) {
+      if (window.innerWidth > this.desktopBreakpoint) {
+        // Initialize Parallaxie on desktop
+        $parallaxie.parallaxie({
+          speed: 0.55,
+          offset: 0,
+        });
+      } else {
+        // Optionally, you can initialize a different effect or behavior for tablet screens
+        // This can be customized depending on your needs
+        $parallaxie.parallaxie({
+          speed: 0.3,
+          offset: 0,
+        });
+      }
+    }
   }
 }

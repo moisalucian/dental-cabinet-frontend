@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 
 
@@ -13,6 +13,7 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
 export class ServiciiDetaliiComponent implements OnInit {
   serviceSlug: string = '';
   serviceDetails: any;
+  @ViewChild('featuredImage') featuredImage!: ElementRef;
 
   // Example service data (this could later come from an API or service)
   services = [
@@ -226,7 +227,7 @@ export class ServiciiDetaliiComponent implements OnInit {
   ];
   
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute,private renderer: Renderer2) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
@@ -241,5 +242,15 @@ export class ServiciiDetaliiComponent implements OnInit {
       firstWord: words[0], // The first word
       remainingWords: words.slice(1).join(' ') // The rest of the title
     };
+  }
+
+  // Method to handle the scroll
+  scrollToFeaturedImage() {
+    if (this.featuredImage) {
+      this.featuredImage.nativeElement.scrollIntoView({
+        behavior: 'smooth', // Ensures smooth scrolling
+        block: 'start' // Aligns to the top of the viewport
+      });
+    }
   }
 }

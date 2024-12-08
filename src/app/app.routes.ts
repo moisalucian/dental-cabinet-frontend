@@ -52,16 +52,6 @@ export const routes: Routes = [
             import('./components/contact/contact.component').then((m) => m.ContactComponent)
     },
     {
-        path: 'termeni-si-conditii',
-        loadComponent: () =>
-            import('./components/termeni-si-conditii/termeni-si-conditii.component').then((m) => m.TermeniSiConditiiComponent)
-    },
-    {
-        path: 'confidentialitate',
-        loadComponent: () =>
-            import('./components/confidentialitate/confidentialitate.component').then((m) => m.ConfidentialitateComponent)
-    },
-    {
         path: 'intrebari-frecvente',
         loadComponent: () =>
             import('./components/intrebari-frecvente/intrebari-frecvente.component').then((m) => m.IntrebariFrecventeComponent)

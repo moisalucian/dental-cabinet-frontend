@@ -5,7 +5,7 @@
             <div class="col-lg-12">
                 <!-- Page Header Box Start -->
                 <div class="page-header-box">
-                    <h1 class="text-anime-style-2" data-cursor="-opaque"><span>{{ getSplitTitle(serviceDetails?.title).firstWord }}</span>
+                    <h1 #featuredImage class="text-anime-style-2" data-cursor="-opaque"><span>{{ getSplitTitle(serviceDetails?.title).firstWord }}</span>
                         {{ getSplitTitle(serviceDetails?.title).remainingWords }} </h1>
                     <nav class="wow fadeInUp">
                         <ol class="breadcrumb">
@@ -34,7 +34,9 @@
               <h3>Serviciile Noastre</h3>
               <ul>
                 <li *ngFor="let service of services">
-                  <a [routerLink]="['/servicii', service.slug]" [class.active]="service.slug === serviceDetails?.slug">
+                  <a [routerLink]="['/servicii', service.slug]" 
+                  [class.active]="service.slug === serviceDetails?.slug"
+                  (click)="scrollToFeaturedImage()">
                     {{ service.title }}
                   </a>
                 </li>

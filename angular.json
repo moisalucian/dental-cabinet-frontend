@@ -30,22 +30,26 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/bootstrap.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-              "node_modules/animate.css/animate.min.css",
-              "node_modules/swiper/swiper-bundle.min.css",
               "node_modules/magnific-popup/dist/magnific-popup.css",
+              "node_modules/wowjs/css/libs/animate.css",
+              "node_modules/slicknav/dist/slicknav.min.css",
+              "src/assets/css/swiper-bundle.min.css",
+              "src/assets/css/mousecursor.css",
               "src/styles.scss"
             ],
             "scripts": [
               "node_modules/hammerjs/hammer.min.js",
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/slicknav/dist/jquery.slicknav.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "node_modules/swiper/swiper-bundle.min.js",
               "node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
               "node_modules/gsap/dist/gsap.min.js",
-              "node_modules/wowjs/dist/wow.min.js"
+              "node_modules/wowjs/dist/wow.min.js",
+              "src/assets/js/jquery.slicknav.js",
+              "src/assets/js/magiccursor.js",
+              "src/assets/js/parallaxie.js"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
