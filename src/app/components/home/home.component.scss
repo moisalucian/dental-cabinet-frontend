@@ -268,11 +268,13 @@ h5 {
   position: relative;
   z-index: 1;
   margin-bottom: 20px;
+  stroke:none;
 }
 
 .service-item .icon-box img {
   max-width: 48px;
   transition: all 0.5s ease-in-out;
+  stroke:none;
 }
 
 .service-item:hover .icon-box img {
@@ -1004,6 +1006,8 @@ text-align: center;
 
 .testimonial-item .testimonial-quote-image img{
 	max-width: 50px;
+	margin-left: 15px;
+	stroke: none;
 }
 
 .testimonial-item .testimonial-content{
