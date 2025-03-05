@@ -18,17 +18,20 @@ h5 {
 .carousel-inner {
   width: 100%;
   height: calc(100vh - 100px);
+  margin: 0 auto;
 }
 
 .carousel-inner .carousel-item {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .carousel-inner .carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:cover;
+  object-position: 80% 20%;
 }
 
 .carousel-inner .carousel-overlay {
@@ -38,7 +41,7 @@ h5 {
   width: 100%;
   height: 100%;
   background-color: var(--primary-color);
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 .carousel-item::before {
@@ -58,6 +61,20 @@ h5 {
   left: 20%;
   z-index: 2;
 }
+
+/* For mobile devices */
+@media (max-width: 768px) {
+
+	.carousel-inner {
+		height: 31vh; /* or any value that better fits your images */
+	  }
+
+
+	.carousel-inner .carousel-item img {
+	  object-fit:cover;
+	  height: 100%;
+	}
+  }
 
 /************************************/
 /***        05. CTA Box css	      ***/
@@ -373,7 +390,7 @@ h5 {
 
 .visit-clinic {
   position: relative;
-  background: url('/assets/img/backgrounds/visit-clinic-bg.webp') no-repeat;
+  background: url('/assets/img/general/video-bgd-cropped.webp') no-repeat;
   background-position: center center;
   background-size: auto;
   border-radius: 40px;
@@ -808,7 +825,6 @@ h5 {
 
 .team-image img{
 	width: 100%;
-	aspect-ratio: 1/1.2;
 	object-fit: cover;
 	transition: all 0.5s ease-in-out;
 }

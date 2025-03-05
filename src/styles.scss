@@ -11,17 +11,27 @@
 
 
 :root {
-  --primary-color: #0E384C;
-  --secondary-color: #EFF8FF;
-  --text-color: #527282;
-  --accent-color: #1E84B5;
-  --white-color: #FFFFFF;
-  --divider-color: #FFFFFF1F;
-  --dark-divider-color: #0E384C1A;
-  --error-color: rgb(230, 87, 87);
-  --default-font: "Poppins", sans-serif;
-  --team-background: #E7ECEF;
-}
+	/* Main Colors */
+	--primary-color: #c2a597; /* Rich brown */
+	--secondary-color: #F4E6D5; /* Soft beige */
+	--text-color: #867866; /* Dark brown for text */
+	--accent-color: #c2bbb4; /* Warm oak-like accent */
+	--white-color: #FFFFFF; /* Keep white for contrast */
+	
+	/* Dividers */
+	--divider-color: #E4D1B3; /* Light beige divider */
+	--dark-divider-color: #6E4B3A; /* Dark brown divider for contrast */
+	
+	/* Error Color */
+	--error-color: #D1746D; /* Soft muted red for error */
+  
+	/* Font */
+	--default-font: "Poppins", sans-serif;
+  
+	/* Background */
+	--team-background: #F9F4E8; /* Very light cream for background */
+  }
+  
 
 :root {
     --ig-h3-margin-top: 0px !important; /* Set your desired margin */
