@@ -116,6 +116,7 @@ export class AppComponent implements AfterViewInit, OnInit {
     });
   }
 
+
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
       // Initialize SmoothScroll
