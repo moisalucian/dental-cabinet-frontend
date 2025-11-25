@@ -46,6 +46,11 @@ export const routes: Routes = [
         loadComponent: () =>
             import('./components/tarife/tarife.component').then((m) => m.TarifeComponent)
     },
+    // {
+    //     path: 'promo',
+    //     loadComponent: () =>
+    //         import('./components/promo/promo.component').then((m) => m.PromoComponent)
+    // },
     {
         path: 'contact',
         loadComponent: () =>

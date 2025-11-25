@@ -20,6 +20,8 @@
             "outputPath": "dist/dental-cabinet-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "prerender": false,
+            "ssr": false,
             "polyfills": [
               "zone.js"
             ],

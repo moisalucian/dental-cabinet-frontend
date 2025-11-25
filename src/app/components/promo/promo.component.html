@@ -1,0 +1,55 @@
+<!-- Pachete de servicii -->
+<div class="promo-section top-margin">
+    <div class="container">
+        <h2>Pachete de servicii</h2>
+        <div class="row">
+            <div *ngFor="let bundle of serviceBundles" class="col-lg-4 col-md-6">
+                <!-- Promo Item Start -->
+                <div class="promo-item">
+                    <div class="icon-box">
+                        <div class="img">
+                            <img [src]="bundle.icon" alt="{{ bundle.title }}" style="width: 64px; height: 64px;">
+                        </div>
+                    </div>
+                    <div class="promo-body">
+                        <h3>{{ bundle.title }}</h3>
+                        <p>{{ bundle.description }}</p>
+                        <div class="promo-details">
+                            <span class="promo-date">{{ bundle.date }}</span>
+                            <span class="promo-discount">{{ bundle.discount }}</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Item End -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Promoții sezoniere -->
+<div class="promo-section">
+    <div class="container">
+        <h2>Promoții sezoniere</h2>
+        <div class="row">
+            <div *ngFor="let promo of seasonalPromos" class="col-lg-4 col-md-6">
+                <!-- Promo Item Start -->
+                <div class="promo-item">
+                    <div class="icon-box">
+                        <div class="img">
+                            <img [src]="promo.icon" alt="{{ promo.title }}" style="width: 64px; height: 64px;">
+                        </div>
+                    </div>
+                    <div class="promo-body">
+                        <h3>{{ promo.title }}</h3>
+                        <p>{{ promo.description }}</p>
+                        <div class="promo-details">
+                            <span class="promo-date">{{ promo.date }}</span>
+                            <span class="promo-discount">{{ promo.discount }}</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Item End -->
+            </div>
+        </div>
+    </div>
+</div>

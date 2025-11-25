@@ -1,0 +1,115 @@
+/* Promotions Page */
+.page-promotions {
+    padding: 100px 0 70px;
+}
+
+/* Section Title */
+.promo-section {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.promo-section.top-margin {
+    margin-top: 100px;
+}
+
+.promo-section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+/* Promo Item */
+.promo-item {
+    position: relative;
+    background-color: var(--white-color);
+    box-shadow: 0px 4px 40px 0px #0000000F;
+    border-radius: 30px;
+    height: calc(100% - 30px);
+    margin-bottom: 30px;
+    padding: 30px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+}
+
+.promo-item:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    border-radius: 0px;
+    transition: all 0.4s ease-in-out;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.promo-item:hover:before {
+    top: 0;
+}
+
+/* Image Box */
+.promo-item .icon-box {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.promo-item .icon-box img {
+    max-width: 64px;
+    transition: all 0.5s ease-in-out;
+}
+
+.promo-item:hover .icon-box img {
+    filter: brightness(0) invert(1);
+}
+
+/* Promo Body */
+.promo-body {
+    position: relative;
+    z-index: 1;
+}
+
+.promo-body h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.promo-body p {
+    margin: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.promo-details {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-weight: 600;
+    color: var(--accent-color);
+    transition: 0.5s ease-in-out;
+}
+
+.promo-item:hover .promo-body p,
+.promo-item:hover .promo-body h3,
+.promo-item:hover .promo-details {
+    color: var(--white-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .promo-section h2 {
+        font-size: 28px;
+    }
+
+    .promo-item {
+        padding: 20px;
+    }
+}
