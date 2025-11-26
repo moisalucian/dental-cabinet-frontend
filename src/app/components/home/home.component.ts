@@ -6,6 +6,7 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { PromoComponent } from '../promo/promo.component';
 declare var $: any;
 declare var Swiper: any;
+declare var bootstrap: any;
 
 @Component({
   selector: 'app-home',
@@ -85,6 +86,15 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
         }
       }
     });
+
+    // Initialize Bootstrap Carousel
+    const myCarousel = document.querySelector('#carouselExampleCaptions');
+    if (myCarousel) {
+      new bootstrap.Carousel(myCarousel, {
+        interval: 5000,
+        ride: 'carousel'
+      });
+    }
   }
 
   ngOnDestroy() {

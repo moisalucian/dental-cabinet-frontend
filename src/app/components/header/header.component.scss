@@ -2,63 +2,61 @@
 /**** 	   03. Header css		 ****/
 /************************************/
 
-header.main-header{
+header.main-header {
 	background-color: var(--secondary-color);
 	border-bottom: 1px solid var(--dark-divider-color);
 	position: relative;
 	z-index: 100;
 }
 
-header.main-header .header-sticky{
-	position: relative;
+header.main-header .header-sticky {
+	position: fixed;
 	top: 0;
+	left: 0;
+	right: 0;
 	z-index: 100;
+	background: var(--secondary-color);
+	border-bottom: 1px solid var(--dark-divider-color);
+	transition: all 0.3s ease-in-out;
 }
 
-header.main-header .header-sticky.hide{
+header.main-header .header-sticky.hide {
 	transform: translateY(-100%);
 	transition: transform 0.3s ease-in-out;
 	border-radius: 0;
 }
 
-header.main-header .header-sticky.active{
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	border-radius: 0;
-    transform: translateY(0);
-	background: var(--secondary-color);
-	border-bottom: 1px solid var(--dark-divider-color);
+header.main-header .header-sticky.active {
 	backdrop-filter: blur(30px);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar{
+.navbar {
 	padding: 30px 0;
 	align-items: center;
 }
 
-.navbar-brand{
+.navbar-brand {
 	padding: 0;
 	margin: 0;
 }
 
-.main-menu .nav-menu-wrapper{
+.main-menu .nav-menu-wrapper {
 	flex: 1;
 	text-align: center;
 }
 
-.main-menu .nav-menu-wrapper > ul{
+.main-menu .nav-menu-wrapper>ul {
 	align-items: center;
 	display: inline-flex;
 }
 
-.main-menu ul li{
+.main-menu ul li {
 	margin: 0 9px;
 	position: relative;
 }
 
-.main-menu ul li a{
+.main-menu ul li a {
 	font-size: 16px;
 	font-weight: 500;
 	padding: 14px 15px !important;
@@ -66,7 +64,7 @@ header.main-header .header-sticky.active{
 	transition: all 0.3s ease-in-out;
 }
 
-.main-menu ul li.submenu > a:after{
+.main-menu ul li.submenu>a:after {
 	content: '\f107';
 	font-family: 'FontAwesome';
 	font-weight: 900;
@@ -75,11 +73,11 @@ header.main-header .header-sticky.active{
 }
 
 .main-menu ul li a:hover,
-.main-menu ul li a:focus{
+.main-menu ul li a:focus {
 	color: var(--accent-color);
 }
 
-.main-menu ul ul{
+.main-menu ul ul {
 	visibility: hidden;
 	opacity: 0;
 	transform: scaleY(0.8);
@@ -98,56 +96,56 @@ header.main-header .header-sticky.active{
 	text-align: left;
 }
 
-.main-menu ul li.submenu:first-child ul{
-    width: 250px;
+.main-menu ul li.submenu:first-child ul {
+	width: 250px;
 }
 
-.main-menu ul ul ul{
+.main-menu ul ul ul {
 	left: 100%;
 	top: 0;
 	text-align: left;
 }
 
-.main-menu ul ul li{
+.main-menu ul ul li {
 	margin: 0;
 	padding: 0;
 }
 
-.main-menu ul ul li a{
+.main-menu ul ul li a {
 	color: var(--white-color);
 	padding: 8px 20px !important;
 	transition: all 0.3s ease-in-out;
 }
 
-.main-menu ul li:hover > ul{
+.main-menu ul li:hover>ul {
 	visibility: visible;
 	opacity: 1;
 	transform: scaleY(1);
-    padding: 5px 0;
+	padding: 5px 0;
 }
 
 .main-menu ul ul li a:hover,
-.main-menu ul ul li a:focus{
+.main-menu ul ul li a:focus {
 	color: var(--accent-color);
 	background-color: transparent;
 	padding: 8px 20px 8px 23px !important;
 }
 
-.main-menu ul li.highlighted-menu{
-    display: none;
-}
-
-.responsive-menu,
-.navbar-toggle{
+.main-menu ul li.highlighted-menu {
 	display: none;
 }
 
-.responsive-menu{
+.responsive-menu,
+.navbar-toggle {
+	display: none;
+}
+
+.responsive-menu {
 	top: 0;
 	position: relative;
 }
 
-::ng-deep .slicknav_btn{
+::ng-deep .slicknav_btn {
 	background: var(--primary-color);
 	padding: 0;
 	display: flex;
@@ -159,7 +157,7 @@ header.main-header .header-sticky.active{
 	border-radius: 8px;
 }
 
-::ng-deep .slicknav_icon .slicknav_icon-bar{
+::ng-deep .slicknav_icon .slicknav_icon-bar {
 	display: block;
 	width: 100%;
 	height: 3px;
@@ -170,38 +168,38 @@ header.main-header .header-sticky.active{
 	transition: all 0.1s ease-in-out;
 }
 
-::ng-deep .slicknav_icon .slicknav_icon-bar:first-child{
+::ng-deep .slicknav_icon .slicknav_icon-bar:first-child {
 	margin-top: 0 !important;
 }
 
-::ng-deep .slicknav_icon .slicknav_icon-bar:last-child{
+::ng-deep .slicknav_icon .slicknav_icon-bar:last-child {
 	margin-bottom: 0 !important;
 }
 
-::ng-deep .navbar-toggle a.slicknav_btn.slicknav_open .slicknav_icon span.slicknav_icon-bar:nth-child(1){
-    transform: rotate(-45deg) translate(-5px, 5px);
+::ng-deep .navbar-toggle a.slicknav_btn.slicknav_open .slicknav_icon span.slicknav_icon-bar:nth-child(1) {
+	transform: rotate(-45deg) translate(-5px, 5px);
 }
 
-::ng-deep .navbar-toggle a.slicknav_btn.slicknav_open .slicknav_icon span.slicknav_icon-bar:nth-child(2){
-    opacity: 0;
+::ng-deep .navbar-toggle a.slicknav_btn.slicknav_open .slicknav_icon span.slicknav_icon-bar:nth-child(2) {
+	opacity: 0;
 }
 
-::ng-deep .navbar-toggle a.slicknav_btn.slicknav_open .slicknav_icon span.slicknav_icon-bar:nth-child(3){
-    transform: rotate(45deg) translate(-5px, -5px);
+::ng-deep .navbar-toggle a.slicknav_btn.slicknav_open .slicknav_icon span.slicknav_icon-bar:nth-child(3) {
+	transform: rotate(45deg) translate(-5px, -5px);
 }
 
-::ng-deep .slicknav_menu{
+::ng-deep .slicknav_menu {
 	position: absolute;
-    width: 100%;
+	width: 100%;
 	padding: 0;
 	background: var(--primary-color);
 }
 
-::ng-deep .slicknav_menu ul{
+::ng-deep .slicknav_menu ul {
 	margin: 5px 0;
 }
 
-::ng-deep .slicknav_menu ul ul{
+::ng-deep .slicknav_menu ul ul {
 	margin: 0;
 }
 
@@ -218,7 +216,7 @@ header.main-header .header-sticky.active{
 }
 
 ::ng-deep .slicknav_nav .slicknav_row,
-.slicknav_nav li a{
+.slicknav_nav li a {
 	position: relative;
 	font-size: 16px;
 	font-weight: 500;
@@ -231,25 +229,25 @@ header.main-header .header-sticky.active{
 }
 
 ::ng-deep .slicknav_nav a:hover,
-.slicknav_nav .slicknav_row:hover{
+.slicknav_nav .slicknav_row:hover {
 	background-color: transparent !important;
 	color: var(--accent-color) !important;
 	padding: 10px 20px 10px 23px;
 }
 
-::ng-deep .slicknav_menu ul ul li a{
-    padding: 10px 20px 10px 30px;
+::ng-deep .slicknav_menu ul ul li a {
+	padding: 10px 20px 10px 30px;
 }
 
-::ng-deep .slicknav_menu ul ul li a:hover{
+::ng-deep .slicknav_menu ul ul li a:hover {
 	padding: 10px 20px 10px 33px;
 }
 
-::ng-deep .slicknav_arrow{
+::ng-deep .slicknav_arrow {
 	font-size: 0 !important;
 }
 
-::ng-deep .slicknav_arrow:after{
+::ng-deep .slicknav_arrow:after {
 	content: '\f107';
 	font-family: 'FontAwesome';
 	font-weight: 900;
@@ -258,29 +256,30 @@ header.main-header .header-sticky.active{
 	color: var(--white-color);
 	position: absolute;
 	right: 15px;
-    top: 15px;
+	top: 15px;
 	transition: all 0.3s ease-out;
 }
 
-::ng-deep .slicknav_open > a .slicknav_arrow:after{
-    transform: rotate(-180deg);
+::ng-deep .slicknav_open>a .slicknav_arrow:after {
+	transform: rotate(-180deg);
 	color: var(--accent-color);
 }
 
-@media all and (max-width: 991px){
+@media all and (max-width: 991px) {
 
-	#magic-cursor{
-        display: none !important;
-    }
+	#magic-cursor {
+		display: none !important;
+	}
 
-    .slicknav_nav li, .slicknav_nav ul{
-        display: block;
+	.slicknav_nav li,
+	.slicknav_nav ul {
+		display: block;
 		padding: 0px 0px 0px 20px;
 		margin: 10px;
-    }
+	}
 
 	.responsive-menu,
-    .navbar-toggle{
-        display: block;
-    }
+	.navbar-toggle {
+		display: block;
+	}
 }

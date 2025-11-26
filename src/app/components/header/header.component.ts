@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, HostListener } from '@angular/core';
 declare var $: any;
 
 @Component({
@@ -9,7 +9,14 @@ declare var $: any;
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements AfterViewInit {
-  
+
+  isSticky: boolean = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isSticky = window.scrollY > 0;
+  }
+
   ngAfterViewInit() {
     // Initialize SlickNav after the view has been rendered
     $('#menu').slicknav({
