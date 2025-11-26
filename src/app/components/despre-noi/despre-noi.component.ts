@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, OnInit, OnDestroy } from '@angular/core';
 import { EchipaComponent } from '../echipa/echipa.component';
-
+declare var Swiper: any;
 declare var $: any;
 
 @Component({
@@ -15,7 +15,7 @@ declare var $: any;
 export class DespreNoiComponent implements OnInit, AfterViewInit, OnDestroy {
   firstFourTeamMembers: any[] = [];
 
-  constructor(private echipaComponent: EchipaComponent) {}
+  constructor(private echipaComponent: EchipaComponent) { }
 
   ngOnInit(): void {
     this.firstFourTeamMembers = this.echipaComponent.teamMembers.slice(0, 4);
@@ -39,6 +39,30 @@ export class DespreNoiComponent implements OnInit, AfterViewInit, OnDestroy {
     // Initialize Parallaxie on the '.parallaxie' class
     this.initializeParallaxie();
     window.addEventListener('resize', this.initializeParallaxie.bind(this)); // Handle window resize
+
+    // Initialize Swiper after the view has been rendered
+    const testimonialSlider = new Swiper('.testimonial-slider .swiper', {
+      slidesPerView: 1,
+      speed: 1000,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      navigation: {
+        nextEl: '.testimonial-button-next',
+        prevEl: '.testimonial-button-prev',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 1,
+        },
+        991: {
+          slidesPerView: 1,
+        }
+      }
+    });
   }
 
   ngOnDestroy() {
