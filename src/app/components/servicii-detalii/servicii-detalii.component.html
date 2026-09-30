@@ -9,8 +9,8 @@
                         {{ getSplitTitle(serviceDetails?.title).remainingWords }} </h1>
                     <nav class="wow fadeInUp">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/">Acasa</a></li>
-                            <li class="breadcrumb-item"><a href="/servicii">Servicii</a></li>
+                            <li class="breadcrumb-item"><a routerLink="/">Acasa</a></li>
+                            <li class="breadcrumb-item"><a routerLink="/servicii">Servicii</a></li>
                             <li class="breadcrumb-item active" aria-current="page">{{ serviceDetails?.title }}</li>
                         </ol>
                     </nav>
@@ -55,7 +55,7 @@
                 </p>
               </div>
               <div class="cta-contact-btn">
-                <a href="/contact" class="btn-default">Contactează-ne</a>
+                <a routerLink="/contact" class="btn-default">Contactează-ne</a>
               </div>
             </div>
           </div>

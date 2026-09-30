@@ -236,7 +236,10 @@ export class ServiciiDetaliiComponent implements OnInit {
     });
   }
 
-  getSplitTitle(title: string): { firstWord: string; remainingWords: string } {
+  getSplitTitle(title: string | undefined | null): { firstWord: string; remainingWords: string } {
+    if (!title) {
+      return { firstWord: '', remainingWords: '' };
+    }
     const words = title.split(' ');
     return {
       firstWord: words[0], // The first word

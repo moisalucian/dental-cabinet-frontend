@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 
 import { DespreNoiComponent } from './despre-noi.component';
 
@@ -8,7 +9,8 @@ describe('DespreNoiComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DespreNoiComponent]
+      imports: [DespreNoiComponent],
+      providers: [provideRouter([])]
     })
     .compileComponents();
     

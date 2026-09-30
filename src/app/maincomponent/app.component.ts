@@ -1,5 +1,4 @@
 import { AfterViewInit, Component, Inject, NgZone, OnInit, PLATFORM_ID } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { Router, NavigationEnd, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '../components/header/header.component';
@@ -24,8 +23,6 @@ export class AppComponent implements AfterViewInit, OnInit {
   constructor(
     private wowService: NgwWowService,
     private ngZone: NgZone,
-    private meta: Meta,
-    private titleService: Title,
     @Inject(DOCUMENT) private document: Document,
     private router: Router,
     @Inject(PLATFORM_ID) private platformId: Object
@@ -34,20 +31,6 @@ export class AppComponent implements AfterViewInit, OnInit {
     if (isPlatformBrowser(this.platformId)) {
       this.wowService.init();
     }
-    this.addSeoTags();
-  }
-
-  addSeoTags() {
-    this.titleService.setTitle('Dental Cabinet - Zâmbetul tău contează');
-    this.meta.addTags([
-      { name: 'description', content: 'Clinică stomatologică modernă oferind servicii complete: profilaxie, stomatologie generală, endodonție și estetică dentară.' },
-      { name: 'keywords', content: 'stomatolog, dentist, clinica dentara, profilaxie, endodontie' },
-      { name: 'robots', content: 'index, follow' },
-      { property: 'og:title', content: 'Dental Cabinet - Servicii Stomatologice Complete' },
-      { property: 'og:description', content: 'Clinică stomatologică modernă oferind servicii complete pentru sănătatea zâmbetului tău.' },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:image', content: 'assets/img/carousel/home-2.webp' }
-    ]);
   }
 
   addJsonLd() {
@@ -56,14 +39,14 @@ export class AppComponent implements AfterViewInit, OnInit {
     script.text = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Dentist",
-      "name": "Dental Cabinet",
+      "name": "Clinica Edentall",
       "image": "assets/img/carousel/home-2.webp",
-      "description": "Clinică stomatologică modernă oferind servicii complete.",
+      "description": "Clinica Edentall Brașov: stomatologie generală, implant dentar, ortodonție și estetică dentară.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Strada Exemplu nr. 1",
-        "addressLocality": "București",
-        "postalCode": "010000",
+        "streetAddress": "Strada Ștefan Baciu nr. 45",
+        "addressLocality": "Brașov",
+        "postalCode": "500170",
         "addressCountry": "RO"
       },
       "telephone": "+40770793767",

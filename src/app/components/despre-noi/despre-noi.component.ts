@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, OnInit, OnDestroy } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { EchipaComponent } from '../echipa/echipa.component';
 declare var Swiper: any;
 declare var $: any;
@@ -7,7 +8,7 @@ declare var $: any;
 @Component({
   selector: 'app-despre-noi',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './despre-noi.component.html',
   styleUrls: ['./despre-noi.component.scss'],
   providers: [EchipaComponent]

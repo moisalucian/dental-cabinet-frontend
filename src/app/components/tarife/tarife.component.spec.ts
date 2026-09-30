@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 import { TarifeComponent } from './tarife.component';
 
@@ -8,7 +10,8 @@ describe('TarifeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TarifeComponent]
+      imports: [TarifeComponent],
+      providers: [provideRouter([]), provideAnimations()]
     })
     .compileComponents();
     

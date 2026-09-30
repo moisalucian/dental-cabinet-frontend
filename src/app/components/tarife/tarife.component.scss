@@ -58,6 +58,37 @@ igx-switch {
     padding: 16px;
 }
 
+/* Tarife Toggle Controls */
+.tarife-toggle-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 24px 0 32px;
+    padding: 16px;
+    background: var(--secondary-color);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.tarife-toggle-item {
+    color: var(--text-color);
+    font-weight: 500;
+    --igx-switch-thumb-on-color: var(--primary-color);
+    --igx-switch-track-on-color: var(--accent-color);
+}
+
+/* Tarife Info Section */
+.tarife-info-section {
+    padding-bottom: 60px;
+}
+
+.tarife-info-content p {
+    text-indent: 2em;
+    margin-bottom: 16px;
+}
+
 /* igx-accordion Styling */
 igx-accordion {
     max-width: 50%;

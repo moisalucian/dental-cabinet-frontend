@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-intrebari-frecvente',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './intrebari-frecvente.component.html',
   styleUrl: './intrebari-frecvente.component.scss'
 })

@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit, OnDestroy } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 import { EchipaComponent } from '../echipa/echipa.component';
 import 'magnific-popup';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
@@ -11,7 +11,7 @@ declare var bootstrap: any;
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, NgOptimizedImage, PromoComponent],
+  imports: [CommonModule, NgOptimizedImage, PromoComponent, RouterModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   providers: [EchipaComponent]
@@ -24,25 +24,11 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
   firstFourTeamMembers: any[] = [];
 
   constructor(
-    private titleService: Title,
-    private metaService: Meta,
     private echipaComponent: EchipaComponent
   ) { }
 
   ngOnInit(): void {
-    // Set page title
-    this.titleService.setTitle('Edentall - Clinica Stomatologica');
     this.firstFourTeamMembers = this.echipaComponent.teamMembers.slice(0, 4);
-
-    // Add meta tags
-    this.metaService.addTags([
-      { name: 'description', content: 'Clinică stomatologică modernă oferind servicii complete: profilaxie, stomatologie generală, endodonție și estetică dentară.' },
-      { name: 'keywords', content: 'stomatolog, dentist, clinica dentara, profilaxie, endodontie' },
-      { name: 'author', content: 'Dental Cabinet' },
-      { charset: 'utf-8' },
-      { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
-    ]);
   }
 
   ngAfterViewInit() {

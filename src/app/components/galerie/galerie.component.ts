@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component,AfterViewInit  } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 declare var $: any;
 
@@ -12,7 +13,7 @@ declare global {
 @Component({
   selector: 'app-galerie',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './galerie.component.html',
   styleUrls: ['./galerie.component.scss']
 })

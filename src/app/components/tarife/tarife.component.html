@@ -8,7 +8,7 @@
                     <h1 class="text-anime-style-2" data-cursor="-opaque"><span>Tarifele</span> Edentall</h1>
                     <nav class="wow fadeInUp">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/">Acasa</a></li>
+                            <li class="breadcrumb-item"><a routerLink="/">Acasa</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Tarife</li>
                         </ol>
                     </nav>
@@ -20,19 +20,25 @@
 </div>
 <!-- Page Header End -->
 
-<!-- Single Branch Expand Toggle -->
-<igx-switch 
-  [(ngModel)]="singleBranchExpand" 
-  (change)="toggleSingleBranchExpand(accordion)">
-  Single Branch Expand
-</igx-switch>
+<!-- Tarife Toggle Controls Start -->
+<div class="container">
+    <div class="tarife-toggle-controls">
+        <igx-switch
+          class="tarife-toggle-item"
+          [(ngModel)]="singleBranchExpand"
+          (change)="toggleSingleBranchExpand(accordion)">
+          Extinde un singur panou
+        </igx-switch>
 
-<!-- Expand All / Collapse All Toggle -->
-<igx-switch 
-  [checked]="expandAll" 
-  (click)="toggleExpandAll(accordion)">
-  Expand All / Collapse All
-</igx-switch>
+        <igx-switch
+          class="tarife-toggle-item"
+          [checked]="expandAll"
+          (click)="toggleExpandAll(accordion)">
+          Extinde tot / Restrânge tot
+        </igx-switch>
+    </div>
+</div>
+<!-- Tarife Toggle Controls End -->
 
 <article class="sample-wrapper">
     <igx-accordion #accordion [singleBranchExpand]="singleBranchExpand">
@@ -333,6 +339,51 @@
         </igx-expansion-panel>
     </igx-accordion>
 </article>
+
+<!-- Tarife Info Section Start -->
+<div class="tarife-info-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <!-- Section Title Start -->
+                <div class="section-title text-center">
+                    <h3 class="wow fadeInUp">Despre tarifele noastre</h3>
+                    <h2 class="text-anime-style-2 text-center" data-cursor="-opaque">
+                        <span>Transparență </span> în stabilirea costurilor
+                    </h2>
+                </div>
+                <!-- Section Title End -->
+                <div class="tarife-info-content wow fadeInUp" data-wow-delay="0.25s">
+                    <p>
+                        Tarifele afișate mai sus reprezintă prețurile standard pentru procedurile enumerate și au rol
+                        orientativ. Costul final al unui tratament poate varia în funcție de complexitatea fiecărui
+                        caz, de materialele alese și de eventualele proceduri asociate, stabilite împreună cu medicul
+                        dentist.
+                    </p>
+                    <p>
+                        Pentru a afla exact ce tratament ți se potrivește și care este costul estimativ complet,
+                        recomandăm o consultație inițială. În cadrul acesteia, medicul stomatolog evaluează situația
+                        ta particulară și elaborează un plan de tratament personalizat, cu un deviz estimativ clar.
+                    </p>
+                    <p>
+                        Echipa Clinicii Edentall este alături de tine pentru a-ți oferi informații complete și
+                        oneste despre fiecare etapă a tratamentului, astfel încât deciziile privind sănătatea ta orală
+                        să fie luate în cunoștință de cauză.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Tarife Info Section End -->
+
+<!--
+  TODO pentru specialistul de marketing:
+  - Vă rugăm confirmați / completați textul din secțiunea "Despre tarifele noastre" de mai sus.
+  - Nu au fost menționate promoții, planuri de plată în rate sau parteneriate cu asigurători,
+    deoarece nicio astfel de informație nu există în prezent altundeva pe site. Adăugați aceste
+    detalii aici doar dacă sunt confirmate oficial de clinică.
+-->
 
 
 

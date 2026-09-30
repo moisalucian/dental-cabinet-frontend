@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 
 import { IntrebariFrecventeComponent } from './intrebari-frecvente.component';
 
@@ -8,7 +9,8 @@ describe('IntrebariFrecventeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [IntrebariFrecventeComponent]
+      imports: [IntrebariFrecventeComponent],
+      providers: [provideRouter([])]
     })
     .compileComponents();
     

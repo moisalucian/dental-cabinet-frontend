@@ -51,7 +51,8 @@
               "node_modules/wowjs/dist/wow.min.js",
               "src/assets/js/jquery.slicknav.js",
               "src/assets/js/magiccursor.js",
-              "src/assets/js/parallaxie.js"
+              "src/assets/js/parallaxie.js",
+              "src/assets/js/SmoothScroll.js"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
@@ -119,7 +120,17 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "./node_modules/hammerjs/hammer.min.js"
+              "node_modules/hammerjs/hammer.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/swiper/swiper-bundle.min.js",
+              "node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
+              "node_modules/gsap/dist/gsap.min.js",
+              "node_modules/wowjs/dist/wow.min.js",
+              "src/assets/js/jquery.slicknav.js",
+              "src/assets/js/magiccursor.js",
+              "src/assets/js/parallaxie.js",
+              "src/assets/js/SmoothScroll.js"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
@@ -130,5 +141,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

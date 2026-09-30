@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ChangeDetectorRef } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { IgxAccordionModule, IgxSwitchModule } from 'igniteui-angular';
 
 @Component({
   selector: 'app-tarife',
   standalone: true,
-  imports: [IgxAccordionModule, IgxSwitchModule, FormsModule],
+  imports: [IgxAccordionModule, IgxSwitchModule, FormsModule, RouterModule],
   templateUrl: './tarife.component.html',
   styleUrl: './tarife.component.scss'
 })
