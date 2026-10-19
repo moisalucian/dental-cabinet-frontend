@@ -280,3 +280,17 @@ h2 {
       margin-bottom: 20px;  /* Reduced margin between cards on mobile */
   }
 }
+
+.contact-card-link,
+.contact-card-link:link,
+.contact-card-link:visited,
+.contact-card-link:hover,
+.contact-card-link:active,
+.contact-info-content p a,
+.contact-info-content p a:link,
+.contact-info-content p a:visited,
+.contact-info-content p a:hover,
+.contact-info-content p a:active {
+    color: var(--text-color) !important;
+    text-decoration: none !important;
+}

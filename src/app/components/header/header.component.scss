@@ -316,3 +316,20 @@ header.main-header .header-sticky.active {
 		display: block;
 	}
 }
+
+.header-phone-link,
+.header-phone-link:link,
+.header-phone-link:visited,
+.header-phone-link:hover,
+.header-phone-link:active {
+    color: var(--primary-color) !important;
+    text-decoration: none !important;
+}
+.header-phone-label,
+.header-phone-label:link,
+.header-phone-label:visited,
+.header-phone-label:hover,
+.header-phone-label:active {
+    color: var(--text-color) !important;
+    text-decoration: none !important;
+}
